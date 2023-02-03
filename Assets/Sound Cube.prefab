@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7661389867185802143}
   - component: {fileID: 7225885174645828797}
   - component: {fileID: 5659551826287805852}
+  - component: {fileID: 8927719254827830197}
   m_Layer: 0
   m_Name: Sound Cube
   m_TagString: Untagged
@@ -110,3 +111,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a581717b47413c418d4275ad0b22740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8927719254827830197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155778540439440647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 963037399
+      Data2: 1082695395
+      Data3: 461774243
+      Data4: 1023536342
+    Path: event:/F drone
+  Event: 
+  PlayEvent: 1
+  StopEvent: 3
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 100
