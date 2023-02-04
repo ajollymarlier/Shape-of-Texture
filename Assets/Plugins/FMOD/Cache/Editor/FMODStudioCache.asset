@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 24621
+  Length: 22000
 --- !u!114 &-7933707668979222606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638110537712200000
+  lastModified: 638110556230200000
   FileSizes: []
   Exists: 1
 --- !u!114 &-4929519507666743870
@@ -60,7 +60,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638110537712400000
+  lastModified: 638110556230400000
   FileSizes: []
   Exists: 1
 --- !u!114 &-3924464928697633878
@@ -78,7 +78,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638110537706500000
+  lastModified: 638110556229600000
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -111,7 +111,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638110537712400000
+  cacheTime: 638110556230400000
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -128,7 +128,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638110537712100000
+  lastModified: 638110556230100000
   FileSizes:
   - Name: 
     Value: 1182
@@ -175,7 +175,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638110537712100000
+  lastModified: 638110556230100000
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -193,7 +193,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638110537712100000
+  lastModified: 638110556230100000
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -265,6 +265,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638110537712000000
+  lastModified: 638110556230000000
   FileSizes: []
   Exists: 1
