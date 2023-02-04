@@ -97,7 +97,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 30, z: 12}
+  m_Size: {x: 20, y: 30, z: 15}
   m_Center: {x: 0, y: 0, z: -6}
 --- !u!114 &5659551826287805852
 MonoBehaviour:
@@ -138,6 +138,6 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 75
