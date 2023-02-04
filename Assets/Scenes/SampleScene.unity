@@ -417,6 +417,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -546,6 +554,14 @@ PrefabInstance:
     - target: {fileID: 4155778540439440647, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -2076,6 +2092,14 @@ PrefabInstance:
     - target: {fileID: 4155778540439440647, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -7394,6 +7418,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8471,6 +8503,14 @@ PrefabInstance:
     - target: {fileID: 4155778540439440647, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -10019,8 +10059,16 @@ PrefabInstance:
       value: Sound Cube 1
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMinDistance
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
