@@ -20,8 +20,8 @@ public class RisingFloorInit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        leftFloor = transform.GetChild(0).gameObject;
-        rightFloor = transform.GetChild(1).gameObject;
+        leftFloor = transform.GetChild(1).gameObject;
+        rightFloor = transform.GetChild(0).gameObject;
         toRaise = leftFloor;
         
         leftFloor.GetComponent<Renderer>().material = material;
