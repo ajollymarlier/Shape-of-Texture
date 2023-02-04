@@ -22,7 +22,7 @@ public class RisingFloorInit : MonoBehaviour
     {
         leftFloor = transform.GetChild(1).gameObject;
         rightFloor = transform.GetChild(0).gameObject;
-        toRaise = leftFloor;
+        toRaise = transform.GetChild(Random.Range(0,2)).gameObject;
         
         leftFloor.GetComponent<Renderer>().material = material;
         rightFloor.GetComponent<Renderer>().material = material;

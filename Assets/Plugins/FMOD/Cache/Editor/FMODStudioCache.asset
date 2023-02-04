@@ -78,7 +78,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638110579919319428
+  lastModified: 638110595025297147
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -111,7 +111,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638110579919319428
+  cacheTime: 638110595025297147
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -265,6 +265,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638110579919309426
+  lastModified: 638110594929835229
   FileSizes: []
   Exists: 1
