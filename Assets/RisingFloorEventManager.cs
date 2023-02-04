@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RisingFloorEventManager : MonoBehaviour
 {
-    private GameObject currentFloor;
+    private RisingFloorInit currentFloor;
 
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
@@ -29,11 +29,12 @@ public class RisingFloorEventManager : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                currentFloor.Raise();
             }
         }
     }
 
-    public void ChangeFloor(GameObject floor)
+    public void ChangeFloor(RisingFloorInit floor)
     {
         currentFloor = floor;
         timeRemaining = 10;
