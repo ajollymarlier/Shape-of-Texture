@@ -704,11 +704,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 134701905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc9aa68a149b56b4c8ce348657d9cdba, type: 3}
+  m_Script: {fileID: 11500000, guid: 03f28400261d87042b9695e9b3a41a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
-  timerIsRunning: 0
+  timerValue: 4
+  timeRemaining: 0
 --- !u!4 &134701907
 Transform:
   m_ObjectHideFlags: 0

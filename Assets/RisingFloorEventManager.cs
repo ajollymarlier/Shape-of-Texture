@@ -6,13 +6,15 @@ public class RisingFloorEventManager : MonoBehaviour
 {
     private RisingFloorInit currentFloor;
 
-    public float timeRemaining = 10;
-    public bool timerIsRunning = false;
+    public float timerValue;
+    public float timeRemaining;
+    private bool timerIsRunning = false;
 
     // Start is called before the first frame update
     void Start()
     {
         timerIsRunning = false;
+        timeRemaining = timerValue;
     }
 
     // Update is called once per frame
@@ -37,7 +39,7 @@ public class RisingFloorEventManager : MonoBehaviour
     public void ChangeFloor(RisingFloorInit floor)
     {
         currentFloor = floor;
-        timeRemaining = 10;
+        timeRemaining = timerValue;
         timerIsRunning = true;
     }
 }

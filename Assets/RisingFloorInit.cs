@@ -42,7 +42,7 @@ public class RisingFloorInit : MonoBehaviour
     {
         if (raising){
             // print(_transform.position.y);
-            _transform.position += new Vector3(0, 0.1f , 0);   
+            _transform.position += new Vector3(0, 0.01f , 0);   
         }
     }
 

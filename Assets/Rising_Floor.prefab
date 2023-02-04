@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 243b4aa964ec0a140bbe5d867114af19, type: 2}
+  raising: 0
+  toRaise: {fileID: 0}
 --- !u!65 &470729740482440094
 BoxCollider:
   m_ObjectHideFlags: 0
