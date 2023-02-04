@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638109896605600000
+  lastModified: 638110445688703302
   FileSizes: []
   Exists: 1
 --- !u!114 &-4929519507666743870
@@ -33,7 +33,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638109896605800000
+  lastModified: 638109811351436406
   FileSizes: []
   Exists: 1
 --- !u!114 &-3924464928697633878
@@ -51,7 +51,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638109896605200000
+  lastModified: 638110445688691102
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -83,7 +83,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638109896605800000
+  cacheTime: 638110445688703302
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -100,7 +100,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638109896605500000
+  lastModified: 638110445688651099
   FileSizes:
   - Name: 
     Value: 1140
@@ -147,7 +147,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638109896605400000
+  lastModified: 638109811351376389
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -165,7 +165,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638109896605500000
+  lastModified: 638109811351366385
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -237,6 +237,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638109896605400000
+  lastModified: 638110445688691102
   FileSizes: []
   Exists: 1
