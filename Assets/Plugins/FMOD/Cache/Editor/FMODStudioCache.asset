@@ -159,7 +159,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638121535395147511
+  lastModified: 638121553785187806
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -224,7 +224,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638121535395147511
+  cacheTime: 638121553785187806
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -241,7 +241,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638121535395007823
+  lastModified: 638121553785026057
   FileSizes:
   - Name: 
     Value: 1450
@@ -405,6 +405,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638121535395137476
+  lastModified: 638121553785177898
   FileSizes: []
   Exists: 1
