@@ -35,6 +35,10 @@ public class PlayerInteraction : MonoBehaviour
             {
                 foreach(RaycastHit hit in hits){
                     Debug.Log("Trying to interact with " + hit.collider.name);
+                    if (hit.transform.GetComponent<Interactable>())
+                    {
+                        hit.transform.GetComponent<Interactable>().Interact();
+                    }
                 }
                 
             }

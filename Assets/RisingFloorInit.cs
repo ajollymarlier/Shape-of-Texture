@@ -6,7 +6,7 @@ public class RisingFloorInit : MonoBehaviour
 {
     public Material material;
 
-    private BoxCollider collider;
+    private BoxCollider boxCollider;
     private GameObject leftFloor;
     private GameObject rightFloor;
     private RisingFloorEventManager EventManager;
@@ -27,8 +27,8 @@ public class RisingFloorInit : MonoBehaviour
         leftFloor.GetComponent<Renderer>().material = material;
         rightFloor.GetComponent<Renderer>().material = material;
 
-        collider = GetComponent<BoxCollider>();
-        collider.size = leftFloor.transform.localScale + new Vector3(rightFloor.transform.localScale.x, 0, 0);
+        boxCollider = GetComponent<BoxCollider>();
+        boxCollider.size = leftFloor.transform.localScale + new Vector3(rightFloor.transform.localScale.x, 0, 0);
 
         EventManager = FindObjectOfType<RisingFloorEventManager>();
 
