@@ -6206,6 +6206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HallwayDoorModel_WithWalls
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5538846351585034234, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.17

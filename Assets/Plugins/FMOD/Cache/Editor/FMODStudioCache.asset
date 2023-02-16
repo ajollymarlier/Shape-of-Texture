@@ -45,6 +45,87 @@ MonoBehaviour:
   lastModified: 638110278492695538
   FileSizes: []
   Exists: 1
+--- !u!114 &-6175489388180838000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_BadSound01
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_BadSound01
+  Guid:
+    Data1: -400188196
+    Data2: 1196857835
+    Data3: 942988479
+    Data4: 400956936
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22000
+--- !u!114 &-5404924023063894878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_GoodSound01
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+  Guid:
+    Data1: -1210618177
+    Data2: 1184910645
+    Data3: 302616215
+    Data4: -1698142981
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11613
+--- !u!114 &-5296466067088925165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/VOX_Announcement01
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/VOX_Announcement01
+  Guid:
+    Data1: -377144672
+    Data2: 1104279340
+    Data3: 1167717276
+    Data4: -596672579
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6259
 --- !u!114 &-4929519507666743870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,9 +159,36 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638119014103365780
+  lastModified: 638121535395147511
   FileSizes: []
   Exists: 1
+--- !u!114 &-3441482106623924281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/AMB_MedAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/AMB_MedAmbience
+  Guid:
+    Data1: 1954136738
+    Data2: 1136353575
+    Data3: 1733270160
+    Data4: 1197967195
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11500
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,12 +214,17 @@ MonoBehaviour:
   - {fileID: 1811717566549951530}
   - {fileID: 2728803573625047875}
   - {fileID: -7967829065228844035}
+  - {fileID: -5296466067088925165}
+  - {fileID: -3441482106623924281}
+  - {fileID: -5404924023063894878}
+  - {fileID: -6175489388180838000}
+  - {fileID: 4998808975416866716}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638119014103365780
+  cacheTime: 638121535395147511
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -128,10 +241,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638119014103226391
+  lastModified: 638121535395007823
   FileSizes:
   - Name: 
-    Value: 1182
+    Value: 1450
   Exists: 1
 --- !u!114 &652757042649830226
 MonoBehaviour:
@@ -250,6 +363,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11500
+--- !u!114 &4998808975416866716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_DoorBeep
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_DoorBeep
+  Guid:
+    Data1: -2087693829
+    Data2: 1275626620
+    Data3: -1921861483
+    Data4: -2064226931
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13000
 --- !u!114 &6019170814916316103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +405,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638119014103355807
+  lastModified: 638121535395137476
   FileSizes: []
   Exists: 1
