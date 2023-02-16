@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638120734979937002
+  lastModified: 638110278492695538
   FileSizes: []
   Exists: 1
 --- !u!114 &-4929519507666743870
@@ -60,7 +60,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638120734979856889
+  lastModified: 638110278492695538
   FileSizes: []
   Exists: 1
 --- !u!114 &-3924464928697633878
@@ -78,7 +78,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638120734979856889
+  lastModified: 638119014103365780
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -111,7 +111,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638120734979937002
+  cacheTime: 638119014103365780
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -128,7 +128,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638120734979696897
+  lastModified: 638119014103226391
   FileSizes:
   - Name: 
     Value: 1182
@@ -175,7 +175,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638120734979696897
+  lastModified: 638110278492635706
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -193,7 +193,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638120734979696897
+  lastModified: 638110278492625733
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -265,6 +265,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638120734979856889
+  lastModified: 638119014103355807
   FileSizes: []
   Exists: 1
