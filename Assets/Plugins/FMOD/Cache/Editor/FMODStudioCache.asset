@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638121828960836517
+  lastModified: 638122387358500000
   FileSizes: []
   Exists: 1
 --- !u!114 &-6175489388180838000
@@ -93,12 +93,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -3924464928697633878}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 11613
+  Length: 60500
 --- !u!114 &-5296466067088925165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,9 +141,36 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638121828144056163
+  lastModified: 638122387358500000
   FileSizes: []
   Exists: 1
+--- !u!114 &-4113287559298108644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_Breathing
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_Breathing
+  Guid:
+    Data1: -1501287623
+    Data2: 1172658829
+    Data3: 863958705
+    Data4: -1620005767
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &-3924464928697633878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +186,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638121828143356811
+  lastModified: 638122387358500000
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -188,7 +215,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 11500
+  Length: 13000
+--- !u!114 &-723604865144763700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_steps_metal
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_steps_metal
+  Guid:
+    Data1: -578966530
+    Data2: 1215849271
+    Data3: -994486118
+    Data4: -1083138847
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8020
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,12 +273,14 @@ MonoBehaviour:
   - {fileID: -5404924023063894878}
   - {fileID: -6175489388180838000}
   - {fileID: 4998808975416866716}
+  - {fileID: -4113287559298108644}
+  - {fileID: -723604865144763700}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638121828960836517
+  cacheTime: 638122387358500000
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -241,10 +297,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638121828960832742
+  lastModified: 638122387357700000
   FileSizes:
   - Name: 
-    Value: 1450
+    Value: 1544
   Exists: 1
 --- !u!114 &652757042649830226
 MonoBehaviour:
@@ -288,7 +344,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638121828143679658
+  lastModified: 638122387357700000
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -306,7 +362,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638121828143683675
+  lastModified: 638122387357700000
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -384,12 +440,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -3924464928697633878}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 13000
+  Length: 11750
 --- !u!114 &6019170814916316103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +461,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638121828143661691
+  lastModified: 638122387358500000
   FileSizes: []
   Exists: 1

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.031442195, g: 0.009468702, b: 0.013107872, a: 1}
+  m_IndirectSpecularColor: {r: 0.03142171, g: 0.009473695, b: 0.0130875, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2142,21 +2142,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 15
+  OverrideMaxDistance: 20
 --- !u!1 &342711070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,21 +2313,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!1 &368536191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3871,21 +3871,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &567594226
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,21 +3945,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &571743033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,21 +4318,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &609552167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5230,21 +5230,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &682363106
 GameObject:
   m_ObjectHideFlags: 0
@@ -5984,21 +5984,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &797924021
 GameObject:
   m_ObjectHideFlags: 0
@@ -7153,21 +7153,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &963588670
 GameObject:
   m_ObjectHideFlags: 0
@@ -8703,21 +8703,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!4 &1043730803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -9205443382576645228, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
@@ -9843,21 +9843,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &1222544241
 GameObject:
   m_ObjectHideFlags: 0
@@ -9976,21 +9976,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 15
+  OverrideMaxDistance: 20
 --- !u!1 &1241330770
 GameObject:
   m_ObjectHideFlags: 0
@@ -12831,21 +12831,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!1 &1543296551
 GameObject:
   m_ObjectHideFlags: 0
@@ -14882,21 +14882,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1 &1807847921
 GameObject:
   m_ObjectHideFlags: 0
@@ -15588,21 +15588,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!1 &1892967190
 GameObject:
   m_ObjectHideFlags: 0
@@ -17086,21 +17086,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 50
+  OverrideMaxDistance: 20
 --- !u!1001 &2006754497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18628,21 +18628,21 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 963037399
-      Data2: 1082695395
-      Data3: 461774243
-      Data4: 1023536342
-    Path: event:/F drone
+      Data1: -1210618177
+      Data2: 1184910645
+      Data3: 302616215
+      Data4: -1698142981
+    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!1 &2134015342
 GameObject:
   m_ObjectHideFlags: 0
