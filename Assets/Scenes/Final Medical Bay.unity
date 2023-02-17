@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.03142171, g: 0.009473695, b: 0.0130875, a: 1}
+  m_IndirectSpecularColor: {r: 0.031442195, g: 0.009468702, b: 0.013107872, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2148,7 +2148,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -2319,7 +2319,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -3877,7 +3877,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -3951,7 +3951,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -4324,7 +4324,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -5236,7 +5236,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -5990,7 +5990,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -7159,7 +7159,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -8709,7 +8709,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -9849,7 +9849,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -9982,7 +9982,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -12837,7 +12837,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -14888,7 +14888,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -15594,7 +15594,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -17092,7 +17092,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -18634,7 +18634,7 @@ MonoBehaviour:
       Data4: -1698142981
     Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
