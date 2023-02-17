@@ -14,17 +14,21 @@ public class Pressable : Interactable
 
     public override void Interact()
     {
-        isPressed = !isPressed;
-        if (isPressed)
-        {
-            Debug.Log("Object is now pressed");
+        Debug.Log("Object is now pressed");
             
-            ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
-            buttonPuzzleInit.handleButtonPress(gameObject);
-        }
-        else
-        {
-            Debug.Log("Object is now unpressed");
-        }
+        ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
+        buttonPuzzleInit.handleButtonPress(gameObject);
+        // isPressed = !isPressed;
+        // if (isPressed)
+        // {
+        //     Debug.Log("Object is now pressed");
+            
+        //     ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
+        //     buttonPuzzleInit.handleButtonPress(gameObject);
+        // }
+        // else
+        // {
+        //     Debug.Log("Object is now unpressed");
+        // }
     }
 }
