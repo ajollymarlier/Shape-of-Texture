@@ -26,9 +26,10 @@ public class trapTrigger : MonoBehaviour
                 buttonLights[i].GetComponent<Light>().intensity = 100;
             }
 
+            ButtonPuzzleInit buttonPuzzleInit = gameObject.GetComponent<ButtonPuzzleInit>();
+            buttonPuzzleInit.init();
+
             triggered = true;
         }
-        
-        
     }
 }

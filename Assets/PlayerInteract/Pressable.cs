@@ -17,15 +17,10 @@ public class Pressable : Interactable
         isPressed = !isPressed;
         if (isPressed)
         {
-            GameObject[] doorLights = GameObject.FindGameObjectsWithTag("Door Light");
-            for (int i=0; i < doorLights.Length; i++){
-                doorLights[i].GetComponent<Light>().intensity = 40;
-            }
-
-            GameObject[] buttonLights = GameObject.FindGameObjectsWithTag("Button Light");
-            for (int i=0; i < buttonLights.Length; i++){
-                buttonLights[i].GetComponent<Light>().intensity = 0;
-            }
+            Debug.Log("Object is now pressed");
+            
+            ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
+            buttonPuzzleInit.handleButtonPress(gameObject);
         }
         else
         {
