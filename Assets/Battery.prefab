@@ -114,11 +114,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -400188196
-      Data2: 1196857835
-      Data3: 942988479
-      Data4: 400956936
-    Path: event:/Medical Bay Intro Scene/SFX_BadSound01
+      Data1: -103570967
+      Data2: 1090592787
+      Data3: -1803139923
+      Data4: 1243429400
+    Path: event:/Botanical Wing Scene/AMB_batterylocation
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -126,6 +126,6 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 10
-  OverrideMaxDistance: 200
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

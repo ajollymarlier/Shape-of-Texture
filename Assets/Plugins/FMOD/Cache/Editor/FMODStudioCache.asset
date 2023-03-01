@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638132572724853280
+  lastModified: 638132655389700000
   FileSizes: []
   Exists: 1
 --- !u!114 &-6175489388180838000
@@ -99,33 +99,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 60500
---- !u!114 &-5296466067088925165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Medical Bay Intro Scene/VOX_Announcement01
-  m_EditorClassIdentifier: 
-  Path: event:/Medical Bay Intro Scene/VOX_Announcement01
-  Guid:
-    Data1: -377144672
-    Data2: 1104279340
-    Data3: 1167717276
-    Data4: -596672579
-  Banks:
-  - {fileID: -3924464928697633878}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6259
 --- !u!114 &-4929519507666743870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,9 +114,90 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638132572724843304
+  lastModified: 638132655390200000
   FileSizes: []
   Exists: 1
+--- !u!114 &-4762750037278068372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Control Center Scene/AMB_ControlAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Control Center Scene/AMB_ControlAmbience
+  Guid:
+    Data1: -716384468
+    Data2: 1115467760
+    Data3: 460242605
+    Data4: 1131885231
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13000
+--- !u!114 &-4749241606904452541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_MedicalLogIntro
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_MedicalLogIntro
+  Guid:
+    Data1: -377144672
+    Data2: 1104279340
+    Data3: 1167717276
+    Data4: -596672579
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40431
+--- !u!114 &-4488768152135038664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Botanical Wing Scene/AMB-BotanicalAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Botanical Wing Scene/AMB-BotanicalAmbience
+  Guid:
+    Data1: 400804258
+    Data2: 1153507024
+    Data3: -1284661845
+    Data4: -96679713
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4113287559298108644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +240,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638122381835825047
+  lastModified: 638132655388900000
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -322,7 +376,6 @@ MonoBehaviour:
   - {fileID: 1811717566549951530}
   - {fileID: 2728803573625047875}
   - {fileID: -7967829065228844035}
-  - {fileID: -5296466067088925165}
   - {fileID: -3441482106623924281}
   - {fileID: -5404924023063894878}
   - {fileID: -6175489388180838000}
@@ -331,13 +384,75 @@ MonoBehaviour:
   - {fileID: -723604865144763700}
   - {fileID: -3385907727764019244}
   - {fileID: -1464208064459569155}
+  - {fileID: 7648412479557801313}
+  - {fileID: 7661726813313978002}
+  - {fileID: -4762750037278068372}
+  - {fileID: -4749241606904452541}
+  - {fileID: -4488768152135038664}
+  - {fileID: 4340617529723566071}
+  - {fileID: 174755372319908662}
+  - {fileID: 140953191808923240}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638132572724853280
+  cacheTime: 638132655390200000
   cacheVersion: 131601
+--- !u!114 &140953191808923240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Botanical Wing Scene/AMB_batterylocation
+  m_EditorClassIdentifier: 
+  Path: event:/Botanical Wing Scene/AMB_batterylocation
+  Guid:
+    Data1: -103570967
+    Data2: 1090592787
+    Data3: -1803139923
+    Data4: 1243429400
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9818
+--- !u!114 &174755372319908662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Botanical Wing Scene/SFX_Batterypickup
+  m_EditorClassIdentifier: 
+  Path: event:/Botanical Wing Scene/SFX_Batterypickup
+  Guid:
+    Data1: -437257373
+    Data2: 1271243288
+    Data3: 1936233365
+    Data4: 1376533843
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1090
 --- !u!114 &415743010234375636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,10 +468,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638132572724793262
+  lastModified: 638132655389500000
   FileSizes:
   - Name: 
-    Value: 1634
+    Value: 2058
   Exists: 1
 --- !u!114 &652757042649830226
 MonoBehaviour:
@@ -400,7 +515,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638109811351376389
+  lastModified: 638132655389500000
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -418,7 +533,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638109811351366385
+  lastModified: 638132655389500000
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -475,6 +590,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11500
+--- !u!114 &4340617529723566071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Botanical Wing Scene/AMB_Pickup_sounds
+  m_EditorClassIdentifier: 
+  Path: event:/Botanical Wing Scene/AMB_Pickup_sounds
+  Guid:
+    Data1: 837999619
+    Data2: 1243582947
+    Data3: 1795918213
+    Data4: 570575743
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34909
 --- !u!114 &4998808975416866716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +659,60 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638122381835825047
+  lastModified: 638132655389500000
   FileSizes: []
   Exists: 1
+--- !u!114 &7648412479557801313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Botanical Wing Scene/SFX_BotanicalIntroLog
+  m_EditorClassIdentifier: 
+  Path: event:/Botanical Wing Scene/SFX_BotanicalIntroLog
+  Guid:
+    Data1: -1483859701
+    Data2: 1332754560
+    Data3: 341089705
+    Data4: -2116066813
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80500
+--- !u!114 &7661726813313978002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/Levelreset_failure
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/Levelreset_failure
+  Guid:
+    Data1: 1803214421
+    Data2: 1083234650
+    Data3: -119289946
+    Data4: 1372684786
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
