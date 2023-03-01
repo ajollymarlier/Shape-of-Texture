@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.031442195, g: 0.009468702, b: 0.013107872, a: 1}
+  m_IndirectSpecularColor: {r: 0.03142171, g: 0.009473695, b: 0.0130875, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -958,8 +958,36 @@ PrefabInstance:
       value: Sound Cube (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 114212844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1154955753
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -618818635
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 594590867
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -5083,8 +5111,36 @@ PrefabInstance:
       value: Sound Cube
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -2083550607
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1267609465
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -636890700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -197883952
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -5234,8 +5290,36 @@ PrefabInstance:
       value: Sound Cube (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -938749274
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1211929477
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 281362612
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -953886022
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -6900,8 +6984,36 @@ PrefabInstance:
       value: Sound Cube (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 747488483
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1132820593
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1188958100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -1763868165
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -7190,8 +7302,36 @@ PrefabInstance:
       value: Sound Cube (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 270956094
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1248789985
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 340820377
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -962932783
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
