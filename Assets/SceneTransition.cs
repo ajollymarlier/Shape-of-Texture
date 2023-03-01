@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+    public string targetSceneName;
+
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other){
-        SceneManager.LoadScene (sceneName:"Control_Center");
+       SceneManager.LoadScene(sceneName:targetSceneName);
     }
 }

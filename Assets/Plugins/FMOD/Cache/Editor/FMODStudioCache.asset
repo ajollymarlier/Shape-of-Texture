@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638132572724853280
+  lastModified: 638132629585046214
   FileSizes: []
   Exists: 1
 --- !u!114 &-6175489388180838000
@@ -141,7 +141,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638132572724843304
+  lastModified: 638132629585036157
   FileSizes: []
   Exists: 1
 --- !u!114 &-4113287559298108644
@@ -336,7 +336,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638132572724853280
+  cacheTime: 638132629585046214
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -353,7 +353,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638132572724793262
+  lastModified: 638132629584976091
   FileSizes:
   - Name: 
     Value: 1634
