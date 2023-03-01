@@ -35,13 +35,13 @@ public class Footsteps_Audio : MonoBehaviour
     }
     private void startsound()
     {
-        Debug.Log("Sound start");
+        // Debug.Log("Sound start");
         instance.start();  
     }
 
     private void stopsound()
     {
-        Debug.Log("Sound stop");
+        // Debug.Log("Sound stop");
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }

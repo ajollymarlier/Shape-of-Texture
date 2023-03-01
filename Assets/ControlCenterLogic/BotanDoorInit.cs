@@ -1,6 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+#if UNITY_EDITOR
+    using UnityEditor;
+    using System.Net;
+#endif
 
 public class BotanDoorInit : MonoBehaviour
 {
@@ -17,5 +23,6 @@ public class BotanDoorInit : MonoBehaviour
         Debug.Log("Door opened");
         Debug.Log(pressedButton);
         leftDoor.SetActive(false);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Medical Bay Intro Scene/SFX_Doors_open", transform.position);
     }
 }

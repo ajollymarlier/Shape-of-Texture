@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
     private bool canCast = true;
-    private RectTransform reticle;
+    private RectTransform reticleRect;
+    // private Image reticleImage;
 
     // Start is called before the first frame update
     void Start()
     {
-        reticle = gameObject.transform.Find("CrosshairAndStamina/Reticle").GetComponent<RectTransform>();
+        reticleRect = gameObject.transform.Find("CrosshairAndStamina/Reticle").GetComponent<RectTransform>();
+        // reticleImage = gameObject.transform.Find("CrosshairAndStamina/Reticle").GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -20,15 +23,20 @@ public class PlayerInteraction : MonoBehaviour
 
         if(lookingatInteractable.Item1)
         {
-            reticle.sizeDelta = new Vector2(200, 200);
+            reticleRect.sizeDelta = new Vector2(200, 200);
             if(Input.GetKeyDown(KeyCode.E))
             {
+                // reticleImage.color = new Color32(153, 153, 153, 100);
                 CheckInteraction(lookingatInteractable.Item2);
             }
+            // else
+            // {
+            //     reticleImage.color = new Color32(255, 255, 255, 100);
+            // }
         }
         else
         {
-            reticle.sizeDelta = new Vector2(50, 50);
+            reticleRect.sizeDelta = new Vector2(50, 50);
         }
         
     }
@@ -57,9 +65,9 @@ public class PlayerInteraction : MonoBehaviour
             // }
             RaycastHit hit;
             if(Physics.Raycast(landingRay, out hit, 4.5f)){
-                Debug.Log("Trying to interact with " + hit.collider.name);
                 if (hit.transform.GetComponent<Interactable>())
                 {
+                    Debug.Log("Looking at interactable " + hit.collider.name);
                     return (true, hit.transform.GetComponent<Interactable>());
 
                 }
