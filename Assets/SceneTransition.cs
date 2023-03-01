@@ -7,6 +7,6 @@ public class SceneTransition : MonoBehaviour
 {
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other){
-        SceneManager.LoadScene (sceneName:"Final Medical Bay");
+        SceneManager.LoadScene (sceneName:"Control_Center");
     }
 }
