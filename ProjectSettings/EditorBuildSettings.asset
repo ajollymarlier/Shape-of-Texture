@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Final Medical Bay.unity
+    guid: 3b397c2c118ae15478858e0e66d02481
+  - enabled: 1
     path: Assets/Scenes/Control_Center.unity
     guid: 0c62056356382c747acc7aaf7cfc2d79
   - enabled: 1
     path: Assets/Scenes/Botanical Wing.unity
     guid: 91167d1c0d4a68447aebed59547aeeb9
-  - enabled: 1
-    path: Assets/Scenes/Final Medical Bay.unity
-    guid: 3b397c2c118ae15478858e0e66d02481
   m_configObjects: {}

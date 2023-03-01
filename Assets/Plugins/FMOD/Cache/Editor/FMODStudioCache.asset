@@ -197,7 +197,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 11500
+  Length: 17000
 --- !u!114 &-4113287559298108644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638132718925995281
+  lastModified: 638132812175352082
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -397,7 +397,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638132718926280693
+  cacheTime: 638132812175352082
   cacheVersion: 131601
 --- !u!114 &140953191808923240
 MonoBehaviour:
@@ -659,7 +659,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638132718925985284
+  lastModified: 638132812175332085
   FileSizes: []
   Exists: 1
 --- !u!114 &7648412479557801313
