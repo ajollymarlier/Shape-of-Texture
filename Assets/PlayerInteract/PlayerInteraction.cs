@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInteraction : MonoBehaviour
 {
     private bool canCast = true;
     private RectTransform reticleRect;
+    private TextMeshProUGUI interactText;
     // private Image reticleImage;
 
     // Start is called before the first frame update
     void Start()
     {
         reticleRect = gameObject.transform.Find("CrosshairAndStamina/Reticle").GetComponent<RectTransform>();
+        interactText = gameObject.transform.Find("CrosshairAndStamina/UI_Elements/InteractControl").GetComponent<TextMeshProUGUI>();
         // reticleImage = gameObject.transform.Find("CrosshairAndStamina/Reticle").GetComponent<Image>();
     }
 
@@ -24,6 +27,7 @@ public class PlayerInteraction : MonoBehaviour
         if(lookingatInteractable.Item1)
         {
             reticleRect.sizeDelta = new Vector2(200, 200);
+            interactText.text = "[E] - Interact";
             if(Input.GetKeyDown(KeyCode.E))
             {
                 // reticleImage.color = new Color32(153, 153, 153, 100);
@@ -37,6 +41,7 @@ public class PlayerInteraction : MonoBehaviour
         else
         {
             reticleRect.sizeDelta = new Vector2(50, 50);
+            interactText.text = "";
         }
         
     }
