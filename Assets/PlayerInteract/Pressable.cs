@@ -12,12 +12,12 @@ using UnityEngine.UI;
 public class Pressable : Interactable, IPointerEnterHandler
 {
     private FMOD.Studio.EventInstance instance;
-    private bool isPressed;
+    // private bool isPressed;
 
     private void Start()
     {
         instance = FMODUnity.RuntimeManager.CreateInstance("event:/Medical Bay Intro Scene/SFX_Button_press");
-        isPressed = false;
+        // isPressed = false;
     }
 
     public void OnPointerEnter(PointerEventData eventData){
