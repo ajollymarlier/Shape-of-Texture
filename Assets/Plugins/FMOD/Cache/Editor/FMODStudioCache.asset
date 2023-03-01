@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638122381835825047
+  lastModified: 638132315797700000
   FileSizes: []
   Exists: 1
 --- !u!114 &-6175489388180838000
@@ -141,7 +141,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638122381835825047
+  lastModified: 638132315797900000
   FileSizes: []
   Exists: 1
 --- !u!114 &-4113287559298108644
@@ -186,7 +186,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638122381835825047
+  lastModified: 638132315796800000
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -216,6 +216,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13000
+--- !u!114 &-3385907727764019244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_Button_press
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_Button_press
+  Guid:
+    Data1: 390924831
+    Data2: 1286247712
+    Data3: 279743673
+    Data4: -1140263114
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8727
+--- !u!114 &-1464208064459569155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_Doors_open
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_Doors_open
+  Guid:
+    Data1: 1396044691
+    Data2: 1148837639
+    Data3: -669184865
+    Data4: -1464287798
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2181
 --- !u!114 &-723604865144763700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,7 +292,7 @@ MonoBehaviour:
   - {fileID: -7933707668979222606}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -275,12 +329,14 @@ MonoBehaviour:
   - {fileID: 4998808975416866716}
   - {fileID: -4113287559298108644}
   - {fileID: -723604865144763700}
+  - {fileID: -3385907727764019244}
+  - {fileID: -1464208064459569155}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638122381835825047
+  cacheTime: 638132315797900000
   cacheVersion: 131601
 --- !u!114 &415743010234375636
 MonoBehaviour:
@@ -297,10 +353,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638122381835512526
+  lastModified: 638132315797500000
   FileSizes:
   - Name: 
-    Value: 1544
+    Value: 1634
   Exists: 1
 --- !u!114 &652757042649830226
 MonoBehaviour:
@@ -344,7 +400,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638109811351376389
+  lastModified: 638132315797500000
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -362,7 +418,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638109811351366385
+  lastModified: 638132315797500000
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -461,6 +517,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638122381835825047
+  lastModified: 638132315797500000
   FileSizes: []
   Exists: 1
