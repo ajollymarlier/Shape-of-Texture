@@ -9,6 +9,7 @@ public class SceneTransition : MonoBehaviour
 
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other){
-       SceneManager.LoadScene(sceneName:targetSceneName);
+        GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
+        SceneManager.LoadScene(sceneName:targetSceneName);
     }
 }
