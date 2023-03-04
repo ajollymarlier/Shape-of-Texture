@@ -434,7 +434,7 @@ MonoBehaviour:
   fov: 60
   invertCamera: 0
   cameraCanMove: 1
-  mouseSensitivity: 0.1
+  mouseSensitivity: 2
   maxLookAngle: 50
   lockCursor: 1
   crosshair: 1
@@ -446,7 +446,7 @@ MonoBehaviour:
   zoomFOV: 30
   zoomStepTime: 5
   playerCanMove: 1
-  walkSpeed: 6.08
+  walkSpeed: 5
   maxVelocityChange: 10
   isWalking: 0
   enableSprint: 0
