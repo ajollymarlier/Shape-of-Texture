@@ -991,7 +991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -5060,8 +5060,36 @@ PrefabInstance:
       value: Sound Cube
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Ab drone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 675858311
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1174511544
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1629171809
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -1220461740
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -5212,7 +5240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -6567,7 +6595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 93
+      value: 96.7
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6887,7 +6915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -7177,7 +7205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8927719254827830197, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 150
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9107568479941445733, guid: c4d0c072d18e92f429d428d0b0b68d46, type: 3}
       propertyPath: m_RootOrder
@@ -8200,6 +8228,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a3a44eeb14197074887cb55ccc3cc7b4, type: 3}
   m_PrefabInstance: {fileID: 1593338702}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607205142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3735957691742723320, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 1298088336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1607205146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607205142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5dd68b8393b1a48b1ace18fe39eaeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerValSecs: 10
+  lowBatteryTime: 10
 --- !u!4 &1614395168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
