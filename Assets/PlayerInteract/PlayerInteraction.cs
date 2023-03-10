@@ -27,8 +27,8 @@ public class PlayerInteraction : MonoBehaviour
         if(lookingatInteractable.Item1)
         {
             reticleRect.sizeDelta = new Vector2(200, 200);
-            interactText.text = "[E] - Interact";
-            if(Input.GetKeyDown(KeyCode.E))
+            interactText.text = "[E]/[Left Click] - Interact";
+            if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
             {
                 // reticleImage.color = new Color32(153, 153, 153, 100);
                 CheckInteraction(lookingatInteractable.Item2);
