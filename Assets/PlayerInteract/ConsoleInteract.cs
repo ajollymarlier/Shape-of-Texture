@@ -9,5 +9,8 @@ public class ConsoleInteract : Interactable
         GameObject hall = GameObject.Find("Structure/Halls/BotanicalHall");
         BotanDoorInit botanDoorInit = hall.transform.GetComponent<BotanDoorInit>();
         botanDoorInit.handleInteract(gameObject);
+
+        Light botanDoorLight = hall.transform.GetComponentInChildren<Light>();
+        botanDoorLight.intensity = 100;
     }
 }
