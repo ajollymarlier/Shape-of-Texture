@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;// Required when using Event data.
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 #if UNITY_EDITOR
     using UnityEditor;
@@ -30,13 +31,22 @@ public class Pressable : Interactable, IPointerEnterHandler
 
     public override void Interact()
     {
-        // Sound
-        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        instance.start();
-
         Debug.Log("Object is now pressed");
-            
-        ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
-        buttonPuzzleInit.handleButtonPress(gameObject);
+
+        if (SceneManager.GetActiveScene().name == "Tutorial"){
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.start();
+
+            TutorialInit tutorialInit = gameObject.transform.parent.GetComponent<TutorialInit>();
+            tutorialInit.handleButtonPress(gameObject);
+        }
+        else if (SceneManager.GetActiveScene().name == "Final Medical Bay"){
+            // Sound
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.start();
+                
+            ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
+            buttonPuzzleInit.handleButtonPress(gameObject);
+        } 
     }
 }
