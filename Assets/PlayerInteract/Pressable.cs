@@ -38,7 +38,7 @@ public class Pressable : Interactable, IPointerEnterHandler
             instance.start();
 
             TutorialInit tutorialInit = gameObject.transform.parent.GetComponent<TutorialInit>();
-            tutorialInit.handleButtonPress(gameObject);
+            tutorialInit.handleObjPress(gameObject);
         }
         else if (SceneManager.GetActiveScene().name == "Final Medical Bay"){
             // Sound

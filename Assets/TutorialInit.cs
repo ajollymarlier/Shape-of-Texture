@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class TutorialInit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject movingDoor;
+    public bool isAudioLog;
+    public string audioLogPath;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void handleObjPress(GameObject pressedObj){
+        pressedObj.GetComponentInChildren<Light>().intensity = 0;
+        movingDoor.transform.Translate(Vector3.right * 4);
 
-    public void handleButtonPress(GameObject pressedButton){
-        pressedButton.GetComponentInChildren<Light>().intensity = 0;
-        gameObject.transform.Translate(Vector3.right * 4);   
+        if (isAudioLog){
+            Debug.Log("AUDIO LOG!");
+        }   
     }
 }
