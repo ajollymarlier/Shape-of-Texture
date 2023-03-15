@@ -1606,11 +1606,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 400804258
-      Data2: 1153507024
-      Data3: -1284661845
-      Data4: -96679713
-    Path: event:/Botanical Wing Scene/AMB-BotanicalAmbience
+      Data1: -716384468
+      Data2: 1115467760
+      Data3: 460242605
+      Data4: 1131885231
+    Path: event:/Control Center Scene/AMB_ControlAmbience
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -1654,36 +1654,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &684408094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514899843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1483859701
-      Data2: 1332754560
-      Data3: 341089705
-      Data4: -2116066813
-    Path: event:/Botanical Wing Scene/SFX_BotanicalIntroLog
-  Event: 
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &694102530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
@@ -3778,7 +3748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 1250658991}
   isAudioLog: 1
-  audioLogPath: 
+  audioLogPath: event:/Medical Bay Intro Scene/SFX_MedicalLogIntro
 --- !u!1001 &1341178119
 PrefabInstance:
   m_ObjectHideFlags: 0

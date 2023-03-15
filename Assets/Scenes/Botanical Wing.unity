@@ -676,6 +676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: flashlight
+      value: 
+      objectReference: {fileID: 1607205146}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
 --- !u!1 &148600548
@@ -3839,6 +3843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: flashlight
+      value: 
+      objectReference: {fileID: 1607205146}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
 --- !u!1001 &697190496
@@ -8245,7 +8253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5dd68b8393b1a48b1ace18fe39eaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerValSecs: 80
+  timerValSecs: 120
   lowBatteryTime: 10
 --- !u!4 &1614395168 stripped
 Transform:
@@ -9182,6 +9190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: flashlight
+      value: 
+      objectReference: {fileID: 1607205146}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
 --- !u!4 &1856246409 stripped
@@ -9244,6 +9256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: flashlight
+      value: 
+      objectReference: {fileID: 1607205146}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
 --- !u!4 &1866641030 stripped
@@ -10065,6 +10081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: flashlight
+      value: 
+      objectReference: {fileID: 1607205146}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
 --- !u!1001 &2032954627
@@ -10709,5 +10729,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery
       objectReference: {fileID: 0}
+    - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: flashlight
+      value: 
+      objectReference: {fileID: 1607205146}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}

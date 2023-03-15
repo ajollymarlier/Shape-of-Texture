@@ -9,12 +9,15 @@ using UnityEngine;
 
 public class BatteryPickup : Interactable
 {
+    public FlashlightTimeout flashlight; 
+    
     public override void Interact()
     {
         Debug.Log("Button is picked up");
 
         // Play pickup sound
         FMODUnity.RuntimeManager.PlayOneShot("event:/Botanical Wing Scene/SFX_batterypickup", transform.position);
+        flashlight.timerValSecs = 120;
 
         Destroy(gameObject);
     }
