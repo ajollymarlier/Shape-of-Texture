@@ -21,15 +21,15 @@ public class JammedDoorAnimation : MonoBehaviour
             transform.Translate(Vector3.left * 10 * Time.deltaTime);
             distanceTravelled += Vector3.left.x * 10 * Time.deltaTime;
 
-            if (distanceTravelled <= -1.5){
+            if (distanceTravelled <= -1.4){
                 closing = false;
             }
         }
         else{
-            transform.Translate(Vector3.right * 1 * Time.deltaTime);
-            distanceTravelled += Vector3.right.x * 1 * Time.deltaTime;
+            transform.Translate(Vector3.right * 0.75f * Time.deltaTime);
+            distanceTravelled += Vector3.right.x * 0.75f * Time.deltaTime;
 
-            if (distanceTravelled >= 0){
+            if (distanceTravelled >= -0.5){
                 closing = true;
             }
         }
