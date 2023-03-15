@@ -337,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 58781974}
   isAudioLog: 0
-  audioLogPath: 
+  audioLogPath: event:/Medical Bay Intro Scene/SFX_MedicalLogIntro
 --- !u!1 &127511056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,8 +1986,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772438889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.7, y: -25.5, z: 24.366}
-  m_LocalScale: {x: -2.9296932, y: 30.628435, z: 86.204926}
+  m_LocalPosition: {x: 140.3, y: -25, z: 24.366}
+  m_LocalScale: {x: 5.7427683, y: 30, z: 86.204926}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1547332497}
@@ -2000,7 +2000,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772438889}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 23f3bc3011d2bb4418520ae6f379f555, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
