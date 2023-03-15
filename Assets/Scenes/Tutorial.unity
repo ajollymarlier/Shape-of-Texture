@@ -1746,7 +1746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -184.83183
+      value: -47.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3321,7 +3321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68
+      value: -184.83183
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3616,7 +3616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -57
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3811,7 +3811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 1250658991}
   isAudioLog: 1
-  audioLogPath: event:/Medical Bay Intro Scene/SFX_MedicalLogIntro
+  audioLogPath: event:/Tutorial Scene/TutorialLog
 --- !u!1001 &1341178119
 PrefabInstance:
   m_ObjectHideFlags: 0
