@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 34909
+--- !u!114 &-8055100400687789561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial Scene/SFX_JumpWhisper
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial Scene/SFX_JumpWhisper
+  Guid:
+    Data1: -411502460
+    Data2: 1195324832
+    Data3: 1851281310
+    Data4: 565569477
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22000
 --- !u!114 &-7967829065228844035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +96,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638143551977914434
+  lastModified: 638143752524918828
   FileSizes: []
   Exists: 1
 --- !u!114 &-6822822574417216529
@@ -168,7 +195,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638143527580703512
+  lastModified: 638143752524918828
   FileSizes: []
   Exists: 1
 --- !u!114 &-4762750037278068372
@@ -224,7 +251,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 40431
+  Length: 32119
 --- !u!114 &-4488768152135038664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,7 +321,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638143527580403519
+  lastModified: 638144844188024834
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -561,12 +588,14 @@ MonoBehaviour:
   - {fileID: 8502201949900806524}
   - {fileID: -6822822574417216529}
   - {fileID: -2028820450967174415}
+  - {fileID: -8055100400687789561}
+  - {fileID: 7730731902791286641}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638143551977914434
+  cacheTime: 638144844188024834
   cacheVersion: 131601
 --- !u!114 &140953191808923240
 MonoBehaviour:
@@ -637,10 +666,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638143527579873517
+  lastModified: 638144844187399718
   FileSizes:
   - Name: 
-    Value: 2380
+    Value: 2494
   Exists: 1
 --- !u!114 &652757042649830226
 MonoBehaviour:
@@ -711,7 +740,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638109954494470278
+  lastModified: 638110278492635706
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -729,7 +758,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638109954494460281
+  lastModified: 638110278492625733
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -828,7 +857,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638143527580393510
+  lastModified: 638144844188024834
   FileSizes: []
   Exists: 1
 --- !u!114 &7648412479557801313
@@ -857,7 +886,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 80500
+  Length: 73788
 --- !u!114 &7661726813313978002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,6 +914,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7730731902791286641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial Scene/TutorialLog
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial Scene/TutorialLog
+  Guid:
+    Data1: -1833121391
+    Data2: 1298051372
+    Data3: -1849086536
+    Data4: 1187863292
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29381
 --- !u!114 &8502201949900806524
 MonoBehaviour:
   m_ObjectHideFlags: 0
