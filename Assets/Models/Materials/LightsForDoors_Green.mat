@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LightsForDoors_Green
-  m_Shader: {fileID: -6465566751694194690, guid: 65d271f8a178e2a4fa6b27f371b9742d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0a8465db6d226cf4ab4912a53c5026c4, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _EMISSION
@@ -95,6 +95,7 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
+    - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -110,6 +111,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Pulsing_Speed: 5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -120,7 +122,9 @@ Material:
     - _Surface: 0
     - _UVSec: 0
     - _WorkflowMode: 1
+    - _ZTest: 4
     - _ZWrite: 1
+    - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 0.19216031, g: 1, b: 0, a: 1}
     - _Color: {r: 0.19216028, g: 1, b: 0, a: 1}
