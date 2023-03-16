@@ -123,7 +123,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638145247619761030
+  lastModified: 638145247581849640
   FileSizes: []
   Exists: 1
 --- !u!114 &-6822822574417216529
@@ -276,7 +276,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638145247619741092
+  lastModified: 638145247581839637
   FileSizes: []
   Exists: 1
 --- !u!114 &-4762750037278068372
@@ -360,6 +360,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 17000
+--- !u!114 &-4208630704421473030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3
+  m_EditorClassIdentifier: 
+  Path: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3
+  Guid:
+    Data1: -107290413
+    Data2: 1311990927
+    Data3: -1813064314
+    Data4: 212100680
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23593
 --- !u!114 &-4113287559298108644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +429,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638145247619381738
+  lastModified: 638145267304052824
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -675,12 +702,14 @@ MonoBehaviour:
   - {fileID: -6391929302246125581}
   - {fileID: -6129522275865630064}
   - {fileID: -9155283300438325431}
+  - {fileID: 6986163173638925536}
+  - {fileID: -4208630704421473030}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638145247619761030
+  cacheTime: 638145267304052824
   cacheVersion: 131601
 --- !u!114 &140953191808923240
 MonoBehaviour:
@@ -751,10 +780,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638145247618421658
+  lastModified: 638145267303349618
   FileSizes:
   - Name: 
-    Value: 2706
+    Value: 2794
   Exists: 1
 --- !u!114 &652757042649830226
 MonoBehaviour:
@@ -825,7 +854,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638109954494470278
+  lastModified: 638109811351376389
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -843,7 +872,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638109954494460281
+  lastModified: 638109811351366385
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -969,9 +998,36 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638145247619361055
+  lastModified: 638145267304042704
   FileSizes: []
   Exists: 1
+--- !u!114 &6986163173638925536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 2
+  m_EditorClassIdentifier: 
+  Path: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 2
+  Guid:
+    Data1: -1898774850
+    Data2: 1224649737
+    Data3: -1343967321
+    Data4: 1457454399
+  Banks:
+  - {fileID: -3924464928697633878}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 26353
 --- !u!114 &7648412479557801313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,7 +1054,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 73788
+  Length: 34000
 --- !u!114 &7661726813313978002
 MonoBehaviour:
   m_ObjectHideFlags: 0
