@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638144063723572929
+  lastModified: 638145193679235763
   FileSizes: []
   Exists: 1
 --- !u!114 &-6822822574417216529
@@ -126,6 +126,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 200000
+--- !u!114 &-6391929302246125581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main Menu Sounds/SFX_Button_click
+  m_EditorClassIdentifier: 
+  Path: event:/Main Menu Sounds/SFX_Button_click
+  Guid:
+    Data1: 870553316
+    Data2: 1249276821
+    Data3: -1297890647
+    Data4: -259233427
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2114
 --- !u!114 &-6175489388180838000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +222,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638144063723562134
+  lastModified: 638145190730448281
   FileSizes: []
   Exists: 1
 --- !u!114 &-4762750037278068372
@@ -321,7 +348,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638144914484707049
+  lastModified: 638145190730172240
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -590,12 +617,15 @@ MonoBehaviour:
   - {fileID: -2028820450967174415}
   - {fileID: -8055100400687789561}
   - {fileID: 7730731902791286641}
+  - {fileID: 5071386541927202307}
+  - {fileID: -6391929302246125581}
+  - {fileID: 3756135169233383477}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638144914484707049
+  cacheTime: 638145193679235763
   cacheVersion: 131601
 --- !u!114 &140953191808923240
 MonoBehaviour:
@@ -666,10 +696,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638144914483909176
+  lastModified: 638145190730162246
   FileSizes:
   - Name: 
-    Value: 2494
+    Value: 2662
   Exists: 1
 --- !u!114 &652757042649830226
 MonoBehaviour:
@@ -740,7 +770,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638132243284747964
+  lastModified: 638109811351376389
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -758,7 +788,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638132243284737995
+  lastModified: 638109811351366385
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -815,6 +845,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11500
+--- !u!114 &3756135169233383477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main Menu Sounds/SFX_Button_hoover
+  m_EditorClassIdentifier: 
+  Path: event:/Main Menu Sounds/SFX_Button_hoover
+  Guid:
+    Data1: 1988477160
+    Data2: 1284790628
+    Data3: 1964021142
+    Data4: -955860580
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4363
 --- !u!114 &4998808975416866716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,6 +899,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 15250
+--- !u!114 &5071386541927202307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Medical Bay Intro Scene/SFX_jammed doors
+  m_EditorClassIdentifier: 
+  Path: event:/Medical Bay Intro Scene/SFX_jammed doors
+  Guid:
+    Data1: -1420532334
+    Data2: 1119631217
+    Data3: 649929094
+    Data4: -757637906
+  Banks:
+  - {fileID: -7933707668979222606}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5454
 --- !u!114 &6019170814916316103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -857,7 +941,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638144914484627266
+  lastModified: 638144994054335961
   FileSizes: []
   Exists: 1
 --- !u!114 &7648412479557801313
