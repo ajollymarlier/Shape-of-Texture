@@ -7,6 +7,7 @@ public class JammedDoorAnimation : MonoBehaviour
     // Start is called before the first frame update
     public bool closing;
     public float distanceTravelled;
+    public float maxDistance = 2;
 
     void Start()
     {
@@ -18,16 +19,18 @@ public class JammedDoorAnimation : MonoBehaviour
     void Update()
     {
         if (closing){
-            transform.Translate(Vector3.left * 10 * Time.deltaTime);
-            distanceTravelled += Vector3.left.x * 10 * Time.deltaTime;
+            float move = Mathf.Min(10 * Time.deltaTime, maxDistance);
+            transform.Translate(Vector3.left * move);
+            distanceTravelled += Vector3.left.x * move;
 
             if (distanceTravelled <= -1.4){
                 closing = false;
             }
         }
         else{
-            transform.Translate(Vector3.right * 0.75f * Time.deltaTime);
-            distanceTravelled += Vector3.right.x * 0.75f * Time.deltaTime;
+            float move = Mathf.Min(0.75f * Time.deltaTime, maxDistance);
+            transform.Translate(Vector3.right * move);
+            distanceTravelled += Vector3.right.x * move;
 
             if (distanceTravelled >= -0.5){
                 closing = true;
