@@ -4104,11 +4104,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -4116,9 +4116,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!114 &625222037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4158,6 +4158,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!114 &625222040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625222035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &647134125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5147,11 +5177,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -5159,9 +5189,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!65 &819435543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5175,6 +5205,96 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!114 &819435544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819435539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -938749274
+      Data2: 1211929477
+      Data3: 281362612
+      Data4: -953886022
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &819435545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819435539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &819435546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819435539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &825991285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5511,11 +5631,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -5523,9 +5643,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!65 &840603834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5539,6 +5659,66 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!114 &840603835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840603830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &840603836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840603830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &844705195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6176,11 +6356,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -6188,9 +6368,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!114 &975331913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6971,11 +7151,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -6983,9 +7163,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!1001 &1093750652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7574,36 +7754,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9173206f309923d42a080cd071c7ea13, type: 3}
   m_PrefabInstance: {fileID: 1206548764}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1206548767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206548766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 30
 --- !u!114 &1206548768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7643,6 +7793,156 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!114 &1206548771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206548766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1206548772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206548766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 747488483
+      Data2: 1132820593
+      Data3: 1188958100
+      Data4: -1763868165
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 5
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1206548773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206548766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -938749274
+      Data2: 1211929477
+      Data3: 281362612
+      Data4: -953886022
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1206548774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206548766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1206548775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206548766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1227127256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9807,36 +10107,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9173206f309923d42a080cd071c7ea13, type: 3}
   m_PrefabInstance: {fileID: 1623344159}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1623344162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623344161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 30
 --- !u!114 &1623344163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9876,6 +10146,126 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!114 &1623344166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623344161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1623344167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623344161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1623344168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623344161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -938749274
+      Data2: 1211929477
+      Data3: 281362612
+      Data4: -953886022
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1623344169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623344161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -938749274
+      Data2: 1211929477
+      Data3: 281362612
+      Data4: -953886022
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1635440944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
@@ -10050,11 +10440,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -10062,9 +10452,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!114 &1651947949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10104,6 +10494,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!114 &1651947952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651947947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1655037797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11722,11 +12142,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1210618177
-      Data2: 1184910645
-      Data3: 302616215
-      Data4: -1698142981
-    Path: event:/Medical Bay Intro Scene/SFX_GoodSound01
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -11734,9 +12154,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 30
+  OverrideMaxDistance: 20
 --- !u!65 &1937310964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11750,6 +12170,66 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!114 &1937310965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937310960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1937310966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937310960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1937538790
 PrefabInstance:
   m_ObjectHideFlags: 0
