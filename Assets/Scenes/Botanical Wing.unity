@@ -801,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -4485,7 +4485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -130.9
+      value: -98.9
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4493,7 +4493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -45.2
+      value: -49.6
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11360,7 +11360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -11434,7 +11434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -12517,7 +12517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -13403,7 +13403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
