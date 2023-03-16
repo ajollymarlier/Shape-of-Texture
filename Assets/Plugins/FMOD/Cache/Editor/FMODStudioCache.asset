@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.bank
   Name: Desktop/piotr
   StudioPath: bank:/piotr
-  lastModified: 638145224992444373
+  lastModified: 638145246685300000
   FileSizes: []
   Exists: 1
 --- !u!114 &-6822822574417216529
@@ -222,7 +222,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/piotr.assets.bank
   Name: Desktop/piotr.assets
   StudioPath: bank:/piotr.assets
-  lastModified: 638145206163946494
+  lastModified: 638145246685300000
   FileSizes: []
   Exists: 1
 --- !u!114 &-4762750037278068372
@@ -348,7 +348,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.bank
   Name: Desktop/josh
   StudioPath: bank:/josh
-  lastModified: 638145223043722162
+  lastModified: 638145246685100000
   FileSizes: []
   Exists: 1
 --- !u!114 &-3441482106623924281
@@ -625,7 +625,7 @@ MonoBehaviour:
   - {fileID: 1064029972571204701}
   StringsBanks:
   - {fileID: 415743010234375636}
-  cacheTime: 638145224992444373
+  cacheTime: 638145246685300000
   cacheVersion: 131601
 --- !u!114 &140953191808923240
 MonoBehaviour:
@@ -696,7 +696,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638145206163671054
+  lastModified: 638145246685100000
   FileSizes:
   - Name: 
     Value: 2662
@@ -770,7 +770,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638109811351376389
+  lastModified: 638145246546600000
   FileSizes: []
   Exists: 1
 --- !u!114 &1130117170558749042
@@ -788,7 +788,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.assets.bank
   Name: Desktop/Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 638109811351366385
+  lastModified: 638145246546600000
   FileSizes: []
   Exists: 1
 --- !u!114 &1811717566549951530
@@ -941,7 +941,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/josh.assets.bank
   Name: Desktop/josh.assets
   StudioPath: bank:/josh.assets
-  lastModified: 638144994054335961
+  lastModified: 638145246685100000
   FileSizes: []
   Exists: 1
 --- !u!114 &7648412479557801313
