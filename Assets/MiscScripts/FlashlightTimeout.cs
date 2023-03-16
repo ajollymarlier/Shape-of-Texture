@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class FlashlightTimeout : MonoBehaviour
 {
-    public float timerValSecs;
+    public float startingTimerValSecs;
+    private float timerValSecs;
     public float lowBatteryTime;
     private float defaultFlashlightIntensity;
     private Light flashlight;
@@ -14,6 +15,7 @@ public class FlashlightTimeout : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timerValSecs = startingTimerValSecs;
         lowBattery = false;
         flashlight = GetComponent<Light>();
         defaultFlashlightIntensity = flashlight.intensity;
@@ -52,7 +54,8 @@ public class FlashlightTimeout : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
-    public void ResetFlashlightIntensity(){
+    public void ResetFlashlight(){
+        timerValSecs = startingTimerValSecs;
         flashlight.intensity = defaultFlashlightIntensity;
     }
 }
