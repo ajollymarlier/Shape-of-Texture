@@ -10026,7 +10026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5dd68b8393b1a48b1ace18fe39eaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerValSecs: 120
+  timerValSecs: 60
   lowBatteryTime: 10
 --- !u!1001 &1623344159
 PrefabInstance:

@@ -18,6 +18,7 @@ public class BatteryPickup : Interactable
         // Play pickup sound
         FMODUnity.RuntimeManager.PlayOneShot("event:/Botanical Wing Scene/SFX_batterypickup", transform.position);
         flashlight.timerValSecs = 120;
+        flashlight.ResetFlashlightIntensity();
 
         Destroy(gameObject);
     }
