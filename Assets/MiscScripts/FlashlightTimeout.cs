@@ -51,7 +51,7 @@ public class FlashlightTimeout : MonoBehaviour
     }
 
     private void GameOver(){
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Botanical Wing");
     }
 
     public void ResetFlashlight(){

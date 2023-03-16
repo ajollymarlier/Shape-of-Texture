@@ -2936,7 +2936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac021c471fe83e048ad6201957fba861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: Main_Menu
+  targetSceneName: MainMenu_stuffs/Main Menu_sketch
 --- !u!65 &485452045
 BoxCollider:
   m_ObjectHideFlags: 0
