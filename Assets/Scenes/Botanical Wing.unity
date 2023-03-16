@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.031442195, g: 0.009468702, b: 0.013107872, a: 1}
+  m_IndirectSpecularColor: {r: 0.031483587, g: 0.009458372, b: 0.013140744, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2936,7 +2936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac021c471fe83e048ad6201957fba861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: MainMenu_stuffs/Main Menu_sketch
+  targetSceneName: MainMenu_stuffs/MainMenu_sketch
 --- !u!65 &485452045
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3157,7 +3157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
       propertyPath: m_LocalScale.x
-      value: 398.54984
+      value: 405.32516
       objectReference: {fileID: 0}
     - target: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
       propertyPath: m_LocalScale.y
@@ -3169,7 +3169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 70.131
+      value: 73.483
       objectReference: {fileID: 0}
     - target: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
       propertyPath: m_LocalPosition.y
