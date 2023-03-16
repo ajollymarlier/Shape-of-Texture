@@ -25,11 +25,19 @@ public class MenuButtonSFX : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData){
         Debug.Log("Enter!");
-        hoverInstance.start();
+        startsound();
     }
 
     public void OnPointerExit(PointerEventData eventData){
         Debug.Log("Exit!");
+        hoverInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    public void startsound(){
+        hoverInstance.start();
+    }
+
+    public void stopsound(){
         hoverInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }
