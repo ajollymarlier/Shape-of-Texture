@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class FlashlightTimeout : MonoBehaviour
 {
     public float startingTimerValSecs;
-    private float timerValSecs;
-    public float lowBatteryTime;
+    public float timerValSecs;
+    public float lowBatteryTime = 10;
+    public float fadeAmount = 0.02f;
     private float defaultFlashlightIntensity;
+    public float flashingIntensity;
     private Light flashlight;
 
     private bool lowBattery;
@@ -19,26 +21,27 @@ public class FlashlightTimeout : MonoBehaviour
         lowBattery = false;
         flashlight = GetComponent<Light>();
         defaultFlashlightIntensity = flashlight.intensity;
+        flashingIntensity = defaultFlashlightIntensity - (startingTimerValSecs - lowBatteryTime) * fadeAmount;
     }
 
     // Update is called once per frame
     void Update()
     {
         timerValSecs -= Time.deltaTime;
-        flashlight.intensity -= 0.0002f;
+        flashlight.intensity -= fadeAmount * Time.deltaTime;
 
         if (timerValSecs < 0)
         {
             flashlight.intensity = 0;
             GameOver();
         }
-        else if (timerValSecs < 10)
+        else if (timerValSecs < lowBatteryTime)
         {   
             if (timerValSecs % 2 < 1){
-                flashlight.intensity = 0;
+                flashlight.intensity = 0.4f;
             }
             else{
-                flashlight.intensity = defaultFlashlightIntensity;
+                flashlight.intensity = flashingIntensity;
             }
             
         }
@@ -51,6 +54,7 @@ public class FlashlightTimeout : MonoBehaviour
     }
 
     private void GameOver(){
+        GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
         SceneManager.LoadScene("Botanical Wing");
     }
 
