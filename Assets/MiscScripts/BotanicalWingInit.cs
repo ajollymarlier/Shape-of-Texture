@@ -16,14 +16,16 @@ public class BotanicalWingInit : MonoBehaviour
     }
 
     public void handleObjPress(GameObject pressedObj){
-        pressedObj.GetComponentInChildren<Light>().intensity = 0;
-
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         instance.start();
 
-        if (!(movingDoor is null)){
+        if (!(movingDoor == null)){
             //Move door
+            pressedObj.GetComponentInChildren<Light>().intensity = 0;
             Destroy(movingDoor);
+        }
+        else{
+            pressedObj.GetComponentInChildren<Light>().color = Color.green;
         }
     }
 }

@@ -40,14 +40,14 @@ public class Pressable : Interactable, IPointerEnterHandler
             TutorialInit tutorialInit = gameObject.transform.parent.GetComponent<TutorialInit>();
             tutorialInit.handleObjPress(gameObject);
         }
-        
+
         else if (SceneManager.GetActiveScene().name == "Final Medical Bay"){
             ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
             buttonPuzzleInit.handleButtonPress(gameObject);
         } 
 
         else if (SceneManager.GetActiveScene().name == "Botanical Wing"){
-            BotanicalWingInit botanicalWingInit = gameObject.transform.parent.GetComponent<BotanicalWingInit>();
+            BotanicalWingInit botanicalWingInit = gameObject.transform.GetComponent<BotanicalWingInit>();
             botanicalWingInit.handleObjPress(gameObject);
         } 
     }

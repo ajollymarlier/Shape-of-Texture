@@ -22,6 +22,7 @@ public class FlashlightTimeout : MonoBehaviour
     void Update()
     {
         timerValSecs -= Time.deltaTime;
+        flashlight.intensity -= 0.01f * Time.deltaTime;
 
         if (timerValSecs < 0)
         {
