@@ -1,7 +1,6 @@
 [LOG] System::create                           : Header version = 2.02.11. Current version = 2.02.11.
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
 [LOG] SystemI::init                            : Initialize version=20211 (130436), maxchannels=256, flags=0x00020000
-<<<<<<< HEAD
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
 [LOG] OutputCoreAudio::init                    : Output running 2 channels at 96000Hz sample rate.
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
@@ -13,16 +12,6 @@
 =======
 [LOG] AsyncManager::init                       : manager 0x2b9c9cc08 isAsync 0 updatePeriod 0.02
 >>>>>>> Stashed changes
-=======
-[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0x3, nChannels=1, nSamplesPerSec=48000, nAvgBytesPerSec=192000, nBlockAlign=4, wBitsPerSample=32, cbSize=0.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 2, input speaker mode 3
-[LOG] DownMix::init                            : done.
-[LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002062DD9D268 isAsync 0 updatePeriod 0.02
->>>>>>> main
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.

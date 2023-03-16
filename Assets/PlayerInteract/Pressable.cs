@@ -32,23 +32,21 @@ public class Pressable : Interactable, IPointerEnterHandler
     public override void Interact()
     {
         Debug.Log("Object is now pressed");
-        // Sound
-        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        instance.start();
 
         if (SceneManager.GetActiveScene().name == "Tutorial"){
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.start();
+
             TutorialInit tutorialInit = gameObject.transform.parent.GetComponent<TutorialInit>();
             tutorialInit.handleObjPress(gameObject);
         }
-
         else if (SceneManager.GetActiveScene().name == "Final Medical Bay"){
+            // Sound
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.start();
+                
             ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
             buttonPuzzleInit.handleButtonPress(gameObject);
-        } 
-
-        else if (SceneManager.GetActiveScene().name == "Botanical Wing"){
-            BotanicalWingInit botanicalWingInit = gameObject.transform.GetComponent<BotanicalWingInit>();
-            botanicalWingInit.handleObjPress(gameObject);
         } 
     }
 }

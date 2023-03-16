@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class FlashlightTimeout : MonoBehaviour
 {
@@ -23,7 +22,6 @@ public class FlashlightTimeout : MonoBehaviour
     void Update()
     {
         timerValSecs -= Time.deltaTime;
-        flashlight.intensity -= 0.0001f;
 
         if (timerValSecs < 0)
         {
@@ -49,6 +47,6 @@ public class FlashlightTimeout : MonoBehaviour
     }
 
     private void GameOver(){
-        SceneManager.LoadScene("Main Menu");
+        
     }
 }
