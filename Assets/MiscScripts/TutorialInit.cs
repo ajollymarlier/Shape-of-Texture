@@ -28,4 +28,9 @@ public class TutorialInit : MonoBehaviour
             instance.start();
         }   
     }
+
+    void Update()
+    {
+        
+    }
 }

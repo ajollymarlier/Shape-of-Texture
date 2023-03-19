@@ -202,10 +202,20 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        // Unlock cursor
+        if (PauseMenu.GamePaused)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else if(lockCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         #region Camera
 
         // Control camera movement
-        if(cameraCanMove)
+        if(cameraCanMove && !PauseMenu.GamePaused)
         {
             yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity * 1;
 
@@ -228,7 +238,7 @@ public class FirstPersonController : MonoBehaviour
 
         #region Camera Zoom
 
-        if (enableZoom)
+        if (enableZoom && !PauseMenu.GamePaused)
         {
             // Changes isZoomed when key is pressed
             // Behavior for toogle zoom
@@ -368,7 +378,7 @@ public class FirstPersonController : MonoBehaviour
     {
         #region Movement
 
-        if (playerCanMove)
+        if (playerCanMove && !PauseMenu.GamePaused)
         {
             // Calculate how fast we should be moving
             Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));

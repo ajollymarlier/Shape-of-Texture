@@ -22,6 +22,9 @@ public class PlayerInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!PauseMenu.GamePaused){
+            
+        }
         var lookingatInteractable = CheckLookingAtInteractable();
 
         if(lookingatInteractable.Item1)
