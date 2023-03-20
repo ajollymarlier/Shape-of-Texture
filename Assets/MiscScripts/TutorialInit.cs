@@ -11,8 +11,11 @@ public class TutorialInit : MonoBehaviour
 
     private FMOD.Studio.EventInstance instance;
 
+    private bool logPlaying;
+
     private void Start(){
         instance = FMODUnity.RuntimeManager.CreateInstance(audioLogPath);
+        logPlaying = false;
     }
 
     public void handleObjPress(GameObject pressedObj){
@@ -26,11 +29,17 @@ public class TutorialInit : MonoBehaviour
         if (isAudioLog){
             instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             instance.start();
+            logPlaying = true;
         }   
     }
 
     void Update()
     {
-        
+        if (logPlaying && PauseMenu.GamePaused){
+            instance.setPaused(true);
+        }
+        else if (logPlaying && !PauseMenu.GamePaused){
+            instance.setPaused(false);
+        }
     }
 }

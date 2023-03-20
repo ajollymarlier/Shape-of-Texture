@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         controllerCanvas = GameObject.Find("CrosshairAndStamina");
+        GamePaused = false;
     }
 
     // Update is called once per frame

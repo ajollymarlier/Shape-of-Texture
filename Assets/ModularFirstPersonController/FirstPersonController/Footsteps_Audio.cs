@@ -13,11 +13,14 @@ public class Footsteps_Audio : MonoBehaviour
     private FMOD.Studio.EventInstance instance;
     private bool playSound;
 
+    private bool isPlaying;
+
     // Start is called before the first frame update
     void Start()
     {
         instance = FMODUnity.RuntimeManager.CreateInstance("event:/Medical Bay Intro Scene/SFX_steps_metal");
         playSound = false;
+        isPlaying = false;
     }
     void Update()
     
@@ -32,16 +35,25 @@ public class Footsteps_Audio : MonoBehaviour
             stopsound();
             playSound = false;
         }
+
+        if (isPlaying && PauseMenu.GamePaused){
+            instance.setPaused(true);
+        }
+        else if (isPlaying && !PauseMenu.GamePaused){
+            instance.setPaused(false);
+        }
     }
     public void startsound()
     {
         // Debug.Log("Sound start");
-        instance.start();  
+        instance.start();
+        isPlaying = true;  
     }
 
     public void stopsound()
     {
         // Debug.Log("Sound stop");
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        isPlaying = false;
     }
 }

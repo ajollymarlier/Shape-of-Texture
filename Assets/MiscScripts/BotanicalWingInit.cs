@@ -9,15 +9,18 @@ public class BotanicalWingInit : MonoBehaviour
     private FMODUnity.StudioEventEmitter emitter;
 
     private FMOD.Studio.EventInstance instance;
+    private bool isPlaying;
     // Start is called before the first frame update
     void Start()
     {
         instance = FMODUnity.RuntimeManager.CreateInstance(audioLogPath);
+        isPlaying = false;
     }
 
     public void handleObjPress(GameObject pressedObj){
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         instance.start();
+        isPlaying = true;
 
         if (!(movingDoor == null)){
             //Move door
@@ -26,6 +29,16 @@ public class BotanicalWingInit : MonoBehaviour
         }
         else{
             pressedObj.GetComponentInChildren<Light>().color = Color.green;
+        }
+    }
+
+    void Update()
+    {
+        if (isPlaying && PauseMenu.GamePaused){
+            instance.setPaused(true);
+        }
+        else if (isPlaying && !PauseMenu.GamePaused){
+            instance.setPaused(false);
         }
     }
 }
