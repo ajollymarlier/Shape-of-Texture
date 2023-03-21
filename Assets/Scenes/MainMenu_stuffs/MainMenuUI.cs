@@ -2,8 +2,80 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using TMPro;
 
 public class MainMenuUI : MonoBehaviour{
+
+    public GameObject title;
+    public GameObject mainMenuUI;
+    public GameObject optionsMenuUI;
+
+    private Volume globalVolume;
+
+    public GameObject volumeSlider;
+    public GameObject brightnessSlider;
+    public GameObject globalVolumeToggle;
+    public GameObject viewBobToggle;
+    public GameObject graphicsDropdown;
+
+    void Start()
+    {
+        globalVolume = GameObject.Find("Global Volume").GetComponent<Volume>();
+
+        // Load PlayerPrefs
+        // Volume
+        if (!PlayerPrefs.HasKey("volume"))
+        {
+            PlayerPrefs.SetFloat("volume", 1.0f);
+            Debug.Log("Set volume");
+        }
+        float volume = PlayerPrefs.GetFloat("volume");
+        SetVolume(volume);
+        volumeSlider.GetComponent<Slider>().value = volume;
+        
+        // Brightness
+        if (!PlayerPrefs.HasKey("brightness"))
+        {
+            PlayerPrefs.SetFloat("brightness", 1.0f);
+            Debug.Log("Set brightness");
+        }
+        float brightness = PlayerPrefs.GetFloat("brightness");
+        SetBrightness(brightness);
+        brightnessSlider.GetComponent<Slider>().value = brightness;
+
+        // Toggle Filters
+        if (!PlayerPrefs.HasKey("toggleGVolume"))
+        {
+            PlayerPrefs.SetInt("toggleGVolume", 1);
+            Debug.Log("Set toggleGVolume");
+        }
+        bool isToggled = PlayerPrefs.GetInt("toggleGVolume") == 1;
+        ToggleGlobalVolume(isToggled);
+        globalVolumeToggle.GetComponent<Toggle>().isOn = isToggled;
+
+        // Toggle View Bob
+        if (!PlayerPrefs.HasKey("toggleHeadBob"))
+        {
+            PlayerPrefs.SetInt("toggleHeadBob", 1);
+            Debug.Log("Set toggleHeadBob");
+        }
+        isToggled = PlayerPrefs.GetInt("toggleHeadBob") == 1;
+        ToggleHeadBob(isToggled);
+        viewBobToggle.GetComponent<Toggle>().isOn = isToggled;
+
+        // Quality
+        if (!PlayerPrefs.HasKey("qualityIndex"))
+        {
+            PlayerPrefs.SetInt("qualityIndex", 3);
+            Debug.Log("Set tqualityIndex");
+        }
+        int qualityIndex = PlayerPrefs.GetInt("qualityIndex");
+        SetQuality(qualityIndex);
+        graphicsDropdown.GetComponent<TMP_Dropdown>().value = qualityIndex;
+    }
 
     public void PlayTheGame ()
 	{
@@ -12,9 +84,55 @@ public class MainMenuUI : MonoBehaviour{
 		GameObject.Find("Play_Game_Button").GetComponent<MenuButtonSFX>().stopsound();
 	}
 
+    public void Options()
+    {
+        title.SetActive(false);
+        mainMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(true);
+    }
+
 	public void QuitGame ()
     {
         Debug.Log("Quit game");
         Application.Quit();
+    }
+
+    public void Return()
+    {
+        title.SetActive(true);
+        mainMenuUI.SetActive(true);
+        optionsMenuUI.SetActive(false);
+    }
+
+    public void SetVolume(float volume)
+    {
+        Debug.Log("volume: " + volume);
+        PlayerPrefs.SetFloat("volume", volume);
+    }
+
+    public void SetBrightness(float brightness)
+    {
+        Debug.Log("brightness: " + brightness);
+        PlayerPrefs.SetFloat("brightness", brightness);
+    }
+
+    public void ToggleGlobalVolume (bool isToggled)
+    {
+        Debug.Log("global volume: " + isToggled);
+        globalVolume.enabled = isToggled;
+        PlayerPrefs.SetInt("toggleGVolume", (isToggled ? 1 : 0));
+    }
+
+    public void ToggleHeadBob (bool isToggled)
+    {
+        Debug.Log("view bob: " + isToggled);
+        PlayerPrefs.SetInt("toggleHeadBob", (isToggled ? 1 : 0));
+    }
+
+    public void SetQuality (int qualityIndex)
+    {
+        Debug.Log("quality level: " + qualityIndex);
+        QualitySettings.SetQualityLevel(qualityIndex);
+        PlayerPrefs.SetInt("qualityIndex", qualityIndex);
     }
 }

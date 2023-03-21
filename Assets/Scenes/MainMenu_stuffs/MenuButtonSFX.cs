@@ -21,6 +21,7 @@ public class MenuButtonSFX : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     void TaskOnClick(){
 		Debug.Log ("You have clicked the button!");
         pressInstance.start();
+        stopsound();
 	}
 
     public void OnPointerEnter(PointerEventData eventData){
