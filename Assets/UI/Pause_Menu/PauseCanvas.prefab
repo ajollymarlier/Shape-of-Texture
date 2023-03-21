@@ -1160,6 +1160,11 @@ MonoBehaviour:
   optionsMenuUI: {fileID: 6649869622953762998}
   controllerCanvas: {fileID: 0}
   _animator: {fileID: 0}
+  volumeSlider: {fileID: 9106546551192370400}
+  brightnessSlider: {fileID: 6472740904045782186}
+  globalVolumeToggle: {fileID: 1434922007048486688}
+  viewBobToggle: {fileID: 7506111296709149991}
+  graphicsDropdown: {fileID: 7753818053150468240}
 --- !u!1 &2155987712997983661
 GameObject:
   m_ObjectHideFlags: 0
