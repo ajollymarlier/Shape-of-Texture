@@ -23,29 +23,29 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         if (!PauseMenu.GamePaused){
-            
-        }
-        var lookingatInteractable = CheckLookingAtInteractable();
+            var lookingatInteractable = CheckLookingAtInteractable();
 
-        if(lookingatInteractable.Item1)
-        {
-            reticleRect.sizeDelta = new Vector2(200, 200);
-            interactText.text = "[E]/[Left Click] - Interact";
-            if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+            if(lookingatInteractable.Item1)
             {
-                // reticleImage.color = new Color32(153, 153, 153, 100);
-                CheckInteraction(lookingatInteractable.Item2);
+                reticleRect.sizeDelta = new Vector2(200, 200);
+                interactText.text = "[E]/[Left Click] - Interact";
+                if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+                {
+                    // reticleImage.color = new Color32(153, 153, 153, 100);
+                    CheckInteraction(lookingatInteractable.Item2);
+                }
+                // else
+                // {
+                //     reticleImage.color = new Color32(255, 255, 255, 100);
+                // }
             }
-            // else
-            // {
-            //     reticleImage.color = new Color32(255, 255, 255, 100);
-            // }
+            else
+            {
+                reticleRect.sizeDelta = new Vector2(50, 50);
+                interactText.text = "";
+            }
         }
-        else
-        {
-            reticleRect.sizeDelta = new Vector2(50, 50);
-            interactText.text = "";
-        }
+        
         
     }
 

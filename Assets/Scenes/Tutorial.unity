@@ -4551,6 +4551,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1423345849183156998, guid: ccd6138e7e8285149a1be561d9b9b796, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2155987712804335091, guid: ccd6138e7e8285149a1be561d9b9b796, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
@@ -4637,6 +4641,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2155987712804335095, guid: ccd6138e7e8285149a1be561d9b9b796, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6391049744979476253, guid: ccd6138e7e8285149a1be561d9b9b796, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886940750754704259, guid: ccd6138e7e8285149a1be561d9b9b796, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7950704251662534695, guid: ccd6138e7e8285149a1be561d9b9b796, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5684,9 +5700,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4277989835723631032, guid: 5cacf15fb91f80c4581cfdd913991cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4277989835723631033, guid: 5cacf15fb91f80c4581cfdd913991cf3, type: 3}
       propertyPath: m_Name
       value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277989835723631033, guid: 5cacf15fb91f80c4581cfdd913991cf3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4277989835723631035, guid: 5cacf15fb91f80c4581cfdd913991cf3, type: 3}
       propertyPath: m_RootOrder
