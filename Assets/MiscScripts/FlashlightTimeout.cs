@@ -11,6 +11,7 @@ public class FlashlightTimeout : MonoBehaviour
     public float fadeAmount = 0.02f;
     private float defaultFlashlightIntensity;
     public float flashingIntensity;
+    public bool losingBattery;
     private Light flashlight;
 
     private bool lowBattery;
@@ -27,30 +28,33 @@ public class FlashlightTimeout : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerValSecs -= Time.deltaTime;
-        flashlight.intensity -= fadeAmount * Time.deltaTime;
+        if (losingBattery){
+            timerValSecs -= Time.deltaTime;
+            flashlight.intensity -= fadeAmount * Time.deltaTime;
 
-        if (timerValSecs < 0)
-        {
-            flashlight.intensity = 0;
-            GameOver();
-        }
-        else if (timerValSecs < lowBatteryTime)
-        {   
-            if (timerValSecs % 2 < 1){
-                flashlight.intensity = 0.4f;
+            if (timerValSecs < 0)
+            {
+                flashlight.intensity = 0;
+                GameOver();
             }
-            else{
-                flashlight.intensity = flashingIntensity;
+            else if (timerValSecs < lowBatteryTime)
+            {   
+                if (timerValSecs % 2 < 1){
+                    flashlight.intensity = 0.4f;
+                }
+                else{
+                    flashlight.intensity = flashingIntensity;
+                }
+                
             }
-            
+            else if (timerValSecs < lowBatteryTime){
+                lowBattery = true;
+            }
+            else if (!lowBattery){
+                lowBattery = true;
+            }
         }
-        else if (timerValSecs < lowBatteryTime){
-            lowBattery = true;
-        }
-        else if (!lowBattery){
-            lowBattery = true;
-        }
+        
     }
 
     private void GameOver(){
