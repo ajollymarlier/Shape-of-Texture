@@ -8,16 +8,33 @@ public class ControlCentreSubtitle : MonoBehaviour
 {
     public GameObject textBox;
 
+    private bool logPlaying;
+    private FMOD.Studio.EventInstance instance;
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SubtitleSequence());
+        // StartCoroutine(SubtitleSequence());
+        logPlaying = false;
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/Control Center Scene/ControlLOG_Franks");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!logPlaying && !PauseMenu.GamePaused)
+        {
+            logPlaying = true;
+            instance.start();
+            StartCoroutine(SubtitleSequence());
+        }
+
+        if (logPlaying && PauseMenu.GamePaused){
+            instance.setPaused(true);
+        }
+        else if (logPlaying && !PauseMenu.GamePaused){
+            instance.setPaused(false);
+        }
     }
 
     IEnumerator SubtitleSequence() {
