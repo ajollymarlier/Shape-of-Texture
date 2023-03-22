@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.03142171, g: 0.009473695, b: 0.0130875, a: 1}
+  m_IndirectSpecularColor: {r: 0.031483587, g: 0.009458372, b: 0.013140744, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2436,6 +2436,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94be305a42b8758468ac052961bf6eb7, type: 3}
+--- !u!114 &396511344 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 1298088336}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &397269350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6df8166c99b1cd44184881d0f60328ac, type: 3}
@@ -2795,7 +2806,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &448036536
 PrefabInstance:
@@ -4318,6 +4329,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!65 &625222039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4519,7 +4531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864851310106429, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4589,6 +4601,7 @@ MonoBehaviour:
   lowBatteryTime: 10
   fadeAmount: 0.02
   flashingIntensity: 2
+  losingBattery: 1
 --- !u!114 &651123744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5683,6 +5696,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3per
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!114 &819435541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6138,6 +6152,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!114 &840603832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6932,6 +6947,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!65 &975331915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7647,6 +7663,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!114 &1088944490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7859,6 +7876,7 @@ GameObject:
   - component: {fileID: 1128515596}
   - component: {fileID: 1128515595}
   - component: {fileID: 1128515597}
+  - component: {fileID: 1128515598}
   m_Layer: 0
   m_Name: Final Static Screen
   m_TagString: Untagged
@@ -7963,6 +7981,19 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!65 &1128515598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128515592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0506741}
+  m_Center: {x: -5.6937e-17, y: 0, z: 0.12689078}
 --- !u!4 &1140239671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
@@ -8500,6 +8531,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!65 &1206548770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9231,7 +9263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4459864851551516607, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_RootOrder
@@ -9689,17 +9721,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
   m_PrefabInstance: {fileID: 1860304575}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1403329404 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
-  m_PrefabInstance: {fileID: 651123739}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1429781830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6df8166c99b1cd44184881d0f60328ac, type: 3}
@@ -10766,6 +10787,12 @@ MonoBehaviour:
   lowBatteryTime: 10
   fadeAmount: 0.02
   flashingIntensity: 2
+  losingBattery: 0
+--- !u!108 &1607205148 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 4794260138949420996, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 1298088336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1623344159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10872,6 +10899,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Tutorial Scene/SFX_JumpWhis
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!65 &1623344165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11221,6 +11249,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 2
   textBox: {fileID: 326097762}
+  flashlight: {fileID: 0}
 --- !u!65 &1651947951
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11716,11 +11745,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
   m_PrefabInstance: {fileID: 779236007}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1751469914 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4794260138949420996, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
-  m_PrefabInstance: {fileID: 651123739}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1753385950 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -11814,6 +11838,7 @@ MonoBehaviour:
   movingDoor: {fileID: 250239638}
   audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog
   textBox: {fileID: 326097762}
+  flashlight: {fileID: 1607205148}
 --- !u!4 &1775119568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
@@ -12959,6 +12984,7 @@ MonoBehaviour:
   movingDoor: {fileID: 0}
   audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
   textBox: {fileID: 0}
+  flashlight: {fileID: 0}
 --- !u!114 &1937310962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13801,9 +13827,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59386787e238da4dac1c9344c4644b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1403329404}
+  player: {fileID: 396511344}
   staticScreen: {fileID: 1128515592}
-  flashlight: {fileID: 1751469914}
+  flashlight: {fileID: 1607205148}
   moveSpeed: 1
 --- !u!1001 &2108002517
 PrefabInstance:

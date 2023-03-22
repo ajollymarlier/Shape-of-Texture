@@ -23,11 +23,11 @@ public class MovementOverrideLogic : MonoBehaviour
             if (player.transform.position.z < staticScreen.transform.position.z){
                 player.transform.position += new Vector3(0, 0, moveSpeed * Time.deltaTime);
             }
-            else if (player.transform.position.x < staticScreen.transform.position.x){
+            else if (player.transform.position.x < staticScreen.transform.position.x - 1){
                 player.transform.position += new Vector3(moveSpeed * Time.deltaTime, 0, 0);
             }
             else{
-                Debug.Log("REACHED!!");
+                flashlight.GetComponent<FlashlightTimeout>().losingBattery = false;
             }
         }
     }

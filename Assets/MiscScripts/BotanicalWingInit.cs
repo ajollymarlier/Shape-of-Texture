@@ -8,6 +8,7 @@ public class BotanicalWingInit : MonoBehaviour
     public GameObject movingDoor;
     public string audioLogPath;
     public GameObject textBox;
+    public Light flashlight;
     private FMODUnity.StudioEventEmitter emitter;
 
     private FMOD.Studio.EventInstance instance;
@@ -36,6 +37,7 @@ public class BotanicalWingInit : MonoBehaviour
             //Move door
             pressedObj.GetComponentInChildren<Light>().intensity = 0;
             Destroy(movingDoor);
+            flashlight.GetComponent<FlashlightTimeout>().losingBattery = true;
         }
         else{
             pressedObj.GetComponentInChildren<Light>().color = Color.green;
