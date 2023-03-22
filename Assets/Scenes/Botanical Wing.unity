@@ -2625,7 +2625,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &448036536
 PrefabInstance:
@@ -5099,7 +5099,7 @@ Transform:
   - {fileID: 1390025606}
   - {fileID: 1196669707}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &767565874
 PrefabInstance:
@@ -5287,7 +5287,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &780763149
 BoxCollider:
@@ -9372,7 +9372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 142.88806
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9380,7 +9380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 456
+      value: 470
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11581,8 +11581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 0}
   audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 2
-  flashlight: {fileID: 0}
   textBox: {fileID: 1093361427}
+  flashlight: {fileID: 0}
 --- !u!65 &1651947951
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12170,8 +12170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 250239638}
   audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog
-  flashlight: {fileID: 1607205148}
   textBox: {fileID: 1093361427}
+  flashlight: {fileID: 1607205148}
 --- !u!4 &1775119568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
