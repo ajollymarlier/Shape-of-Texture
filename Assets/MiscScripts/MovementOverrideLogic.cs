@@ -46,7 +46,7 @@ public class MovementOverrideLogic : MonoBehaviour
             }
             else{
                 yield return new WaitForSeconds(3);
-                SceneManager.LoadScene("Main_Menu");
+                SceneManager.LoadScene("MainMenu_sketch");
             }
         }
     }
