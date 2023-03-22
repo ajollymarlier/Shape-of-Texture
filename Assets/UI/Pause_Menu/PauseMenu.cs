@@ -52,7 +52,7 @@ public class PauseMenu : MonoBehaviour
         // Master Volume
         if (!PlayerPrefs.HasKey("volume"))
         {
-            PlayerPrefs.SetFloat("volume", 0.7f);
+            PlayerPrefs.SetFloat("volume", 0.6f);
             Debug.Log("Set volume");
         }
         float volume = PlayerPrefs.GetFloat("volume");

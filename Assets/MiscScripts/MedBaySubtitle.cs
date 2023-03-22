@@ -7,17 +7,36 @@ using TMPro;
 public class MedBaySubtitle : MonoBehaviour
 {
     public GameObject textBox;
+    public GameObject fpc;
+
+    private bool logPlaying;
+    private FMOD.Studio.EventInstance instance;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SubtitleSequence());
+        // Playing log from Subtitle Manager
+        logPlaying = false;
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/Medical Bay Intro Scene/SFX_MedicalLogIntro");
+        // StartCoroutine(SubtitleSequence());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!logPlaying && !PauseMenu.GamePaused)
+        {
+            logPlaying = true;
+            instance.start();
+            StartCoroutine(SubtitleSequence());
+        }
+
+        if (logPlaying && PauseMenu.GamePaused){
+            instance.setPaused(true);
+        }
+        else if (logPlaying && !PauseMenu.GamePaused){
+            instance.setPaused(false);
+        }
     }
 
     IEnumerator SubtitleSequence() {

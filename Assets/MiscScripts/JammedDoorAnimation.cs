@@ -29,7 +29,6 @@ public class JammedDoorAnimation : MonoBehaviour
 
             if (distanceTravelled <= -1.4){
                 closing = false;
-                Debug.Log("Play");
                 emitter.GetComponent<FMODUnity.StudioEventEmitter>().Play();
             }
         }
