@@ -5596,8 +5596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 0}
-  audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3per
-  textBox: {fileID: 0}
+  audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3
+  textBox: {fileID: 1093361427}
   flashlight: {fileID: 0}
 --- !u!114 &819435541
 MonoBehaviour:
@@ -6893,9 +6893,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 25
+  OverrideMaxDistance: 20
 --- !u!114 &975331913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7637,8 +7637,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 0}
-  audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
-  textBox: {fileID: 0}
+  audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog
+  textBox: {fileID: 1093361427}
   flashlight: {fileID: 0}
 --- !u!114 &1088944490
 MonoBehaviour:
@@ -11230,7 +11230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 0}
-  audioLogPath: event:/Tutorial Scene/SFX_JumpWhis
+  audioLogPath: event:/Tutorial Scene/SFX_JumpWhisper
   textBox: {fileID: 0}
   flashlight: {fileID: 0}
 --- !u!65 &1623344165
@@ -12169,7 +12169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingDoor: {fileID: 250239638}
-  audioLogPath: event:/Botanical Wing Scene/SFX_BotanicalIntroLog
+  audioLogPath: event:/Botanical Wing Scene/LOG_The Light is Out
   textBox: {fileID: 1093361427}
   flashlight: {fileID: 1607205148}
 --- !u!4 &1775119568 stripped
