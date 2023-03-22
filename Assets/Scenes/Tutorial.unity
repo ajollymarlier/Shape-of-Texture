@@ -1620,11 +1620,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -716384468
-      Data2: 1115467760
-      Data3: 460242605
-      Data4: 1131885231
-    Path: event:/Control Center Scene/AMB_ControlAmbience
+      Data1: 745342045
+      Data2: 1088754218
+      Data3: -489786720
+      Data4: -655149177
+    Path: event:/Tutorial Scene/AMB_TutorialAmbience
   Event: 
   PlayEvent: 1
   StopEvent: 2
