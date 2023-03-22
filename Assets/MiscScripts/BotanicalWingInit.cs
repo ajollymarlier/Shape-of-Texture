@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BotanicalWingInit : MonoBehaviour
 {
@@ -56,33 +57,33 @@ public class BotanicalWingInit : MonoBehaviour
 
     IEnumerator SubtitleSequence001() {
         yield return new WaitForSeconds(1);
-        textBox.GetComponent<Text>().text = "Okay, so before we send this station to its orbit, I'm making a simple guide for the crew.";
+        textBox.GetComponent<TextMeshProUGUI>().text = "Okay, so before we send this station to its orbit, I'm making a simple guide for the crew.";
         yield return new WaitForSeconds(6);
-        textBox.GetComponent<Text>().text = "This is the biolab, now, I'm sure you're all familiar with the concept of plants,";
+        textBox.GetComponent<TextMeshProUGUI>().text = "This is the biolab, now, I'm sure you're all familiar with the concept of plants,";
         yield return new WaitForSeconds(4);
-        textBox.GetComponent<Text>().text = "but for those of you who come from colonies where they weren't on the curriculum,";
+        textBox.GetComponent<TextMeshProUGUI>().text = "but for those of you who come from colonies where they weren't on the curriculum,";
         yield return new WaitForSeconds(4);
-        textBox.GetComponent<Text>().text = "plants produce food and oxygen";
+        textBox.GetComponent<TextMeshProUGUI>().text = "plants produce food and oxygen";
         yield return new WaitForSeconds(3);
-        textBox.GetComponent<Text>().text = "Without them, the station does not produce food or oxygen.";
+        textBox.GetComponent<TextMeshProUGUI>().text = "Without them, the station does not produce food or oxygen.";
         yield return new WaitForSeconds(3);
-        textBox.GetComponent<Text>().text = "Generally the plants in the biolab should never be left unattended for more than four hours.";
+        textBox.GetComponent<TextMeshProUGUI>().text = "Generally the plants in the biolab should never be left unattended for more than four hours.";
         yield return new WaitForSeconds(6);
-        textBox.GetComponent<Text>().text = "";
+        textBox.GetComponent<TextMeshProUGUI>().text = "";
     }
 
     IEnumerator SubtitleSequence002() {
         // yield return new WaitForSeconds(1);
-        textBox.GetComponent<Text>().text = "Alright, with the simple stuff out of the way, let's move on to the technical elements;";
+        textBox.GetComponent<TextMeshProUGUI>().text = "Alright, with the simple stuff out of the way, let's move on to the technical elements;";
         yield return new WaitForSeconds(6);
-        textBox.GetComponent<Text>().text = "The plants are being exposed to radiation-emitting lights at all times.";
+        textBox.GetComponent<TextMeshProUGUI>().text = "The plants are being exposed to radiation-emitting lights at all times.";
         yield return new WaitForSeconds(5);
-        textBox.GetComponent<Text>().text = "Do not stick your hands or any other part of your body";
+        textBox.GetComponent<TextMeshProUGUI>().text = "Do not stick your hands or any other part of your body";
         yield return new WaitForSeconds(3);
-        textBox.GetComponent<Text>().text = "directly under the lights unless you're wearing the appropriate protective gear,";
+        textBox.GetComponent<TextMeshProUGUI>().text = "directly under the lights unless you're wearing the appropriate protective gear,";
         yield return new WaitForSeconds(5);
-        textBox.GetComponent<Text>().text = "which should be in the closets in the back.";
+        textBox.GetComponent<TextMeshProUGUI>().text = "which should be in the closets in the back.";
         yield return new WaitForSeconds(2);
-        textBox.GetComponent<Text>().text = "";
+        textBox.GetComponent<TextMeshProUGUI>().text = "";
     }
 }
