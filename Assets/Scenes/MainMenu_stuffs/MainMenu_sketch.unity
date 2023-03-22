@@ -7443,7 +7443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Brightness
+  m_text: Brightness (WIP)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c0bc0263e6301640b7d48c69ddb39b0, type: 2}
   m_sharedMaterial: {fileID: 6010407882476047310, guid: 2c0bc0263e6301640b7d48c69ddb39b0, type: 2}
@@ -12236,7 +12236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Volume (wip)
+  m_text: Volume (WIP)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c0bc0263e6301640b7d48c69ddb39b0, type: 2}
   m_sharedMaterial: {fileID: 6010407882476047310, guid: 2c0bc0263e6301640b7d48c69ddb39b0, type: 2}
