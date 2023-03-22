@@ -29,6 +29,13 @@ public class PauseMenu : MonoBehaviour
     public GameObject viewBobToggle;
     public GameObject graphicsDropdown;
 
+    private FMOD.Studio.Bus Master;
+
+    void Awake()
+    {
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/");
+    }
+
     void Start()
     {
         GamePaused = false;
@@ -42,10 +49,10 @@ public class PauseMenu : MonoBehaviour
         _animator = pauseMenuUI.GetComponent<Animator>();
 
         // Load PlayerPrefs
-        // Volume
+        // Master Volume
         if (!PlayerPrefs.HasKey("volume"))
         {
-            PlayerPrefs.SetFloat("volume", 1.0f);
+            PlayerPrefs.SetFloat("volume", 0.7f);
             Debug.Log("Set volume");
         }
         float volume = PlayerPrefs.GetFloat("volume");
@@ -91,6 +98,7 @@ public class PauseMenu : MonoBehaviour
         int qualityIndex = PlayerPrefs.GetInt("qualityIndex");
         SetQuality(qualityIndex);
         graphicsDropdown.GetComponent<TMP_Dropdown>().value = qualityIndex;
+
     }
 
     // Update is called once per frame
@@ -164,6 +172,7 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("volume: " + volume);
         PlayerPrefs.SetFloat("volume", volume);
+        Master.setVolume(volume);
     }
 
     public void SetBrightness(float brightness)

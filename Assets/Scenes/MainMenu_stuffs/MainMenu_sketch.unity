@@ -265,7 +265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00030517578, y: 0.0002593994}
+  m_AnchoredPosition: {x: -0.00030517578, y: 0.00024414062}
   m_SizeDelta: {x: -0.00061035, y: 0.0005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &38397557
@@ -3928,6 +3928,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 990e37787509ed946840fbd0088ea579, type: 3}
   m_PrefabInstance: {fileID: 1792669991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &721808697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721808698}
+  - component: {fileID: 721808699}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721808698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721808697}
+  m_LocalRotation: {x: -0, y: -0.00000004470348, z: 0.36142513, w: 0.9324011}
+  m_LocalPosition: {x: -0.07, y: 0.1, z: 0.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1187052415}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.376}
+--- !u!114 &721808699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721808697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1420532334
+      Data2: 1119631217
+      Data3: 649929094
+      Data4: -757637906
+    Path: event:/Medical Bay Intro Scene/SFX_jammed doors
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 10
 --- !u!1001 &729234576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6162,6 +6224,12 @@ MonoBehaviour:
   closing: 0
   distanceTravelled: 0
   maxDistance: 0.5
+  emitter: {fileID: 721808697}
+--- !u!4 &1187052415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4715362286246197063, guid: aa3b3b071fb0e9740adf2f0a164bfb0c, type: 3}
+  m_PrefabInstance: {fileID: 1187052411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1216797256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 990e37787509ed946840fbd0088ea579, type: 3}
@@ -9060,7 +9128,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.7
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -12625,10 +12693,12 @@ GameObject:
   - component: {fileID: 2128403207}
   - component: {fileID: 2128403206}
   - component: {fileID: 2128403210}
+  - component: {fileID: 2128403213}
   - component: {fileID: 2128403211}
+  - component: {fileID: 2128403212}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12783,6 +12853,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2128403212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128403205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+--- !u!114 &2128403213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128403205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1320450952
+      Data2: 1221966534
+      Data3: -880309614
+      Data4: -1894881900
+    Path: event:/Main Menu Sounds/AMB_MainMenu
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2129509236
 GameObject:
   m_ObjectHideFlags: 0

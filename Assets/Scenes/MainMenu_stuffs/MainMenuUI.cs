@@ -21,15 +21,22 @@ public class MainMenuUI : MonoBehaviour{
     public GameObject viewBobToggle;
     public GameObject graphicsDropdown;
 
+    private FMOD.Studio.Bus Master;
+
+    void Awake()
+    {
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/");
+    }
+
     void Start()
     {
         globalVolume = GameObject.Find("Global Volume").GetComponent<Volume>();
 
         // Load PlayerPrefs
-        // Volume
+        // Master Volume
         if (!PlayerPrefs.HasKey("volume"))
         {
-            PlayerPrefs.SetFloat("volume", 1.0f);
+            PlayerPrefs.SetFloat("volume", 0.7f);
             Debug.Log("Set volume");
         }
         float volume = PlayerPrefs.GetFloat("volume");
@@ -108,6 +115,7 @@ public class MainMenuUI : MonoBehaviour{
     {
         Debug.Log("volume: " + volume);
         PlayerPrefs.SetFloat("volume", volume);
+        Master.setVolume(volume);
     }
 
     public void SetBrightness(float brightness)
