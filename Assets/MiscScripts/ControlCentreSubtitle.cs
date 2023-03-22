@@ -21,7 +21,7 @@ public class ControlCentreSubtitle : MonoBehaviour
     }
 
     IEnumerator SubtitleSequence() {
-        yield return new WaitForSeconds(3);
+        // yield return new WaitForSeconds(3);
         textBox.GetComponent<TextMeshProUGUI>().text = "Alright, folks,";
         yield return new WaitForSeconds(1);
         textBox.GetComponent<TextMeshProUGUI>().text = "management didn’t allow a proper recreational room when Mark commissioned Good Neighbors,";
