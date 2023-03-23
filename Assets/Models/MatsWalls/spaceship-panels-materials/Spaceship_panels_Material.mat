@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Spaceship_panels_Material
-  m_Shader: {fileID: -6465566751694194690, guid: 125f27a5a09e6da40ba11f5e1b4bf8b9, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 6c88a877d3ea9684481f7d2dc12a495b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -74,19 +74,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_24680cf22f9447c59d8a9e788e0b8edc_Texture_1:
-        m_Texture: {fileID: 2800000, guid: c1264657864d0c64da32945514264446, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51499b002082c574eb9b7909c2489093, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_575f68f7f2a34e049a9e745f3f76182a_Texture_1:
-        m_Texture: {fileID: 2800000, guid: eb92764633d8ac0438f3d3cff6128c9e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5f9af37a87dd9da49943b819ac373bfc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_84244be2421643a5b08921ce4be225c2_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 90feb572fab9c5944bdee7466d3a5762, type: 3}
+        m_Texture: {fileID: 2800000, guid: d46c6ea862becd641b30f919cc295901, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_a5daaef77ce14862bdf27443fae9f508_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 7f151b9c368ad72408b76bd31b9f8d1a, type: 3}
+        m_Texture: {fileID: 2800000, guid: e1b9580e0a793924196072aade51e7f9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -148,7 +148,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Tiling: 15
+    - _Tiling: 2
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
