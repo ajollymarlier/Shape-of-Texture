@@ -7,7 +7,6 @@ using TMPro;
 public class MedBaySubtitle : MonoBehaviour
 {
     public GameObject textBox;
-    public GameObject fpc;
 
     private bool logPlaying;
     private FMOD.Studio.EventInstance instance;

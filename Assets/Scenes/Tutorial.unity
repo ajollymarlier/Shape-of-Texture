@@ -4139,11 +4139,6 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
---- !u!1 &1298088337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6873840707011858361, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
-  m_PrefabInstance: {fileID: 1298088336}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1332899002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7030219592342931679, guid: 99d9f4ba481878047b39239445b4f796, type: 3}
@@ -4169,7 +4164,7 @@ MonoBehaviour:
   movingDoor: {fileID: 1250658991}
   isAudioLog: 1
   audioLogPath: event:/Tutorial Scene/TutorialLog
-  textBox: {fileID: 1298088337}
+  textBox: {fileID: 1407736666}
 --- !u!1001 &1341178119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4262,6 +4257,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: -3, z: 1}
   m_Center: {x: -3, y: 1, z: 1}
+--- !u!1 &1407736666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8061039993297541519, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 1298088336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1424089022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a69ae08a9dac3e04b9907bdd3f51f236, type: 3}
