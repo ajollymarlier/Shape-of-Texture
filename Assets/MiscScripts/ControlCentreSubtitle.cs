@@ -41,7 +41,7 @@ public class ControlCentreSubtitle : MonoBehaviour
         // yield return new WaitForSeconds(3);
         textBox.GetComponent<TextMeshProUGUI>().text = "Alright, folks,";
         yield return new WaitForSeconds(1);
-        textBox.GetComponent<TextMeshProUGUI>().text = "management didn’t allow a proper recreational room when Mark commissioned Good Neighbors,";
+        textBox.GetComponent<TextMeshProUGUI>().text = "management didn’t allow a proper recreational room when Mark first commissioned Good Neighbors,";
         yield return new WaitForSeconds(6);
         textBox.GetComponent<TextMeshProUGUI>().text = "which means the control room is what I’d recommend as a lounge.";
         yield return new WaitForSeconds(5);
