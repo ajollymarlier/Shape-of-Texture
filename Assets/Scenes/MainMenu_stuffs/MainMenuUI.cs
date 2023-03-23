@@ -122,12 +122,19 @@ public class MainMenuUI : MonoBehaviour{
     {
         Debug.Log("brightness: " + brightness);
         PlayerPrefs.SetFloat("brightness", brightness);
+        globalVolume.profile.TryGet(out ColorAdjustments ca);
+        ca.postExposure.value = brightness;
     }
 
     public void ToggleGlobalVolume (bool isToggled)
     {
         Debug.Log("global volume: " + isToggled);
-        globalVolume.enabled = isToggled;
+        globalVolume.profile.TryGet(out FilmGrain fg);
+        fg.active = isToggled;
+        globalVolume.profile.TryGet(out ChromaticAberration ca);
+        ca.active = isToggled;
+        globalVolume.profile.TryGet(out Bloom b);
+        b.active = isToggled;
         PlayerPrefs.SetInt("toggleGVolume", (isToggled ? 1 : 0));
     }
 

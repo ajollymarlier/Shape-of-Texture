@@ -179,13 +179,21 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("brightness: " + brightness);
         PlayerPrefs.SetFloat("brightness", brightness);
-        flashlight.intensity = flashlightIntensity * brightness;
+        globalVolume.profile.TryGet(out ColorAdjustments ca);
+        ca.postExposure.value = brightness;
+        // flashlight.intensity = flashlightIntensity * brightness;
     }
 
     public void ToggleGlobalVolume (bool isToggled)
     {
         Debug.Log("global volume: " + isToggled);
-        globalVolume.enabled = isToggled;
+        // globalVolume.enabled = isToggled;
+        globalVolume.profile.TryGet(out FilmGrain fg);
+        fg.active = isToggled;
+        globalVolume.profile.TryGet(out ChromaticAberration ca);
+        ca.active = isToggled;
+        globalVolume.profile.TryGet(out Bloom b);
+        b.active = isToggled;
         PlayerPrefs.SetInt("toggleGVolume", (isToggled ? 1 : 0));
     }
 
