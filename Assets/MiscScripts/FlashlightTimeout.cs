@@ -32,26 +32,33 @@ public class FlashlightTimeout : MonoBehaviour
             timerValSecs -= Time.deltaTime;
             flashlight.intensity -= fadeAmount * Time.deltaTime;
 
+            // No battery
             if (timerValSecs < 0)
             {
                 flashlight.intensity = 0;
                 GameOver();
             }
+            // Low battery
             else if (timerValSecs < lowBatteryTime)
             {   
-                if (timerValSecs % 2 < 1){
+                lowBattery = true;
+            }
+            // else if (timerValSecs < lowBatteryTime){
+            //     lowBattery = true;
+            // }
+            // else if (!lowBattery){
+            //     lowBattery = true;
+            // }
+
+            // Low battery sequence
+            if (lowBattery)
+            {
+                if (timerValSecs % 1 < 0.5){
                     flashlight.intensity = 0.4f;
                 }
                 else{
                     flashlight.intensity = flashingIntensity;
                 }
-                
-            }
-            else if (timerValSecs < lowBatteryTime){
-                lowBattery = true;
-            }
-            else if (!lowBattery){
-                lowBattery = true;
             }
         }
         

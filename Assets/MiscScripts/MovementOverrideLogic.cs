@@ -11,6 +11,7 @@ public class MovementOverrideLogic : MonoBehaviour
     public GameObject staticScreen;
     public Light flashlight;
     public GameObject teleportMarker;
+    public GameObject structure;
     public float moveSpeed;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,11 @@ public class MovementOverrideLogic : MonoBehaviour
     }
 
     IEnumerator handleForcedMovement(){
+        if (triggered)
+        {
+            flashlight.GetComponent<FlashlightTimeout>().losingBattery = false;
+            flashlight.intensity = flashlight.GetComponent<FlashlightTimeout>().flashingIntensity;
+        }
         if (triggered && !teleported){
             if (player.transform.position.z < staticScreen.transform.position.z){
                 player.transform.position += new Vector3(0, 0, moveSpeed * Time.deltaTime);
@@ -33,10 +39,10 @@ public class MovementOverrideLogic : MonoBehaviour
                 player.transform.position += new Vector3(moveSpeed * Time.deltaTime, 0, 0);
             }
             else{
-                flashlight.GetComponent<FlashlightTimeout>().losingBattery = false;
-
-                 yield return new WaitForSeconds(4);
+                yield return new WaitForSeconds(4);
                 player.transform.position = teleportMarker.transform.position;
+                structure.SetActive(false);
+                staticScreen.GetComponent<MeshRenderer>().enabled = false;
                 teleported = true;
             }
         }
@@ -46,6 +52,9 @@ public class MovementOverrideLogic : MonoBehaviour
             }
             else{
                 yield return new WaitForSeconds(3);
+                PauseMenu.GamePaused = true;
+                player.playerCanMove = true;
+                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("MainMenu_sketch");
             }
         }
