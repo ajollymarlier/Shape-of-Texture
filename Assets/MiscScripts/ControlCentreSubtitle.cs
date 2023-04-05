@@ -10,6 +10,7 @@ public class ControlCentreSubtitle : MonoBehaviour
 
     private bool logPlaying;
     private FMOD.Studio.EventInstance instance;
+    private Coroutine cr;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class ControlCentreSubtitle : MonoBehaviour
         {
             logPlaying = true;
             instance.start();
-            StartCoroutine(SubtitleSequence());
+            cr = StartCoroutine(SubtitleSequence());
         }
 
         if (logPlaying && PauseMenu.GamePaused){
@@ -35,6 +36,13 @@ public class ControlCentreSubtitle : MonoBehaviour
         else if (logPlaying && !PauseMenu.GamePaused){
             instance.setPaused(false);
         }
+    }
+
+    public void Stop()
+    {
+        if (cr != null)
+            StopCoroutine(cr);
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     IEnumerator SubtitleSequence() {

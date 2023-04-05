@@ -215,8 +215,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &36453128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1212,8 +1212,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &204582066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -1569,8 +1569,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &256224891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1741,8 +1741,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &287383599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -2533,8 +2533,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &382349380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2789,8 +2789,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &422557514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4813,8 +4813,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &647134125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5292,8 +5292,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &676825400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -5862,8 +5862,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &739644060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94be305a42b8758468ac052961bf6eb7, type: 3}
@@ -5966,8 +5966,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1 &756401482
 GameObject:
   m_ObjectHideFlags: 0
@@ -6289,8 +6289,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &784882016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6700,8 +6700,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &825991285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7700,8 +7700,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1 &957503253
 GameObject:
   m_ObjectHideFlags: 0
@@ -7817,6 +7817,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
   m_PrefabInstance: {fileID: 968899500}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &971051789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 971051792}
+  - component: {fileID: 971051791}
+  - component: {fileID: 971051790}
+  m_Layer: 0
+  m_Name: EmitterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &971051790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971051789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2299f54bae2531c40832dff656bec91e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lock1: {fileID: 1088944487}
+  lock2: {fileID: 975331911}
+  lock3: {fileID: 625222035}
+  lock4: {fileID: 1651947947}
+  lock5: {fileID: 1937310960}
+  lock6: {fileID: 840603830}
+  lock7: {fileID: 819435539}
+  lock8: {fileID: 1623344161}
+  lock9: {fileID: 1206548766}
+  battery1: {fileID: 1290091564}
+  battery2: {fileID: 796095220}
+  battery3: {fileID: 2146342775}
+  battery4: {fileID: 703450279}
+  battery5: {fileID: 1216708104}
+  battery6: {fileID: 1337196489}
+  battery7: {fileID: 588168038}
+--- !u!65 &971051791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971051789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &971051792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971051789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73.13, y: 0.58, z: 450.08}
+  m_LocalScale: {x: 1, y: 3.7475, z: 8.379785}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &975331909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9855,8 +9929,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &1229287295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10609,8 +10683,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1 &1337196489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
@@ -11185,8 +11259,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &1429781830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6df8166c99b1cd44184881d0f60328ac, type: 3}
@@ -11274,8 +11348,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &1432130357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -11621,8 +11695,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1 &1529044725
 GameObject:
   m_ObjectHideFlags: 0
@@ -12407,11 +12481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMinDistance
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -13322,8 +13396,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &1722906477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14240,8 +14314,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &1900365642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -14402,8 +14476,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1 &1906342058
 GameObject:
   m_ObjectHideFlags: 0
@@ -15247,8 +15321,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!4 &1981291187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
@@ -15409,8 +15483,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 6
+  OverrideMaxDistance: 25
 --- !u!1001 &2028048456
 PrefabInstance:
   m_ObjectHideFlags: 0

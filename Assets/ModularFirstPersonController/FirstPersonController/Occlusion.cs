@@ -23,6 +23,8 @@ public class Occlusion : MonoBehaviour
     [Range(10f, 22000f)]
     public float WholeCutoff = 22000f;
     public LayerMask OcclusionLayer = 1;
+    
+    private bool active;
 
     void Awake()
     {
@@ -33,31 +35,43 @@ public class Occlusion : MonoBehaviour
     void Start()
     {
         instance = Emitter.EventInstance;
-        instance.start();
+        // instance.start();
         VolumeValue = 0.8f;
         WholeVolumeValue = 1f;
         LPFCutoff = 12000f;
         WholeCutoff = 22000f;
+        active = false;
+    }
+
+    public void Play()
+    {
+        if (!active)
+        {
+            instance.start();
+            active = true;
+        }
     }
 
     void Update()
     {
-        RaycastHit hit;
-        Physics.Linecast(transform.position, SlLocation.position, out hit, OcclusionLayer);
-
-        if (hit.collider.name == "FirstPersonController")
+        if (active)
         {
-            Debug.Log("not occluded");
-            NotOccluded();
-            Debug.DrawLine (transform.position, SlLocation.position, Color.blue);
-        }
-        else
-        {
-            Debug.Log("occluded");
-            Occluded();
-            Debug.DrawLine (transform.position, hit.point, Color.red);
-        }
+            RaycastHit hit;
+            Physics.Linecast(transform.position, SlLocation.position, out hit, OcclusionLayer);
 
+            if (hit.collider.name == "FirstPersonController")
+            {
+                // Debug.Log("not occluded");
+                NotOccluded();
+                Debug.DrawLine (transform.position, SlLocation.position, Color.blue);
+            }
+            else
+            {
+                // Debug.Log("occluded");
+                Occluded();
+                Debug.DrawLine (transform.position, hit.point, Color.red);
+            }
+        }
 
     }
 

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using TMPro;
+using FMODUnity;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -154,6 +155,35 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Quitting game");
         Application.Quit();
+    }
+
+    public void RestartLevel()
+    {
+        Time.timeScale = 1f;
+        GamePaused = false;
+        GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
+        int index = SceneManager.GetActiveScene().buildIndex;
+        if (index == 1)
+        {
+            TutorialInit[] inits = GameObject.FindObjectsOfType<TutorialInit>();
+            foreach (TutorialInit init in inits)
+                init.Stop();
+        }
+        else if (index == 2)
+        {
+            GameObject.Find("SubtitleManager").GetComponent<MedBaySubtitle>().Stop();
+        }
+        else if (index == 3)
+        {
+            GameObject.Find("SubtitleManager").GetComponent<ControlCentreSubtitle>().Stop();
+        }
+        else if (index == 4)
+        {
+            BotanicalWingInit[] inits = GameObject.FindObjectsOfType<BotanicalWingInit>();
+            foreach (BotanicalWingInit init in inits)
+                init.Stop();
+        }
+        SceneManager.LoadScene(index);
     }
 
     public void Options()

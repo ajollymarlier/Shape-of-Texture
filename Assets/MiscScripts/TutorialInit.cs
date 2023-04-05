@@ -15,6 +15,7 @@ public class TutorialInit : MonoBehaviour
     private FMOD.Studio.EventInstance instance;
 
     private bool logPlaying;
+    private Coroutine cr;
 
     private void Start(){
         instance = FMODUnity.RuntimeManager.CreateInstance(audioLogPath);
@@ -33,7 +34,7 @@ public class TutorialInit : MonoBehaviour
             instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             instance.start();
             logPlaying = true;
-            StartCoroutine(SubtitleSequence());
+            cr = StartCoroutine(SubtitleSequence());
         }   
     }
 
@@ -44,6 +45,15 @@ public class TutorialInit : MonoBehaviour
         }
         else if (logPlaying && !PauseMenu.GamePaused){
             instance.setPaused(false);
+        }
+    }
+
+    public void Stop()
+    {
+        if (cr != null)
+            StopCoroutine(cr);
+        if (isAudioLog){
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
     }
 

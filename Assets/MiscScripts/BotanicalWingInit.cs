@@ -17,7 +17,7 @@ public class BotanicalWingInit : MonoBehaviour
     private FMOD.Studio.EventInstance instance;
     private bool isPlaying;
 
-    public Coroutine coroutine;
+    public Coroutine cr;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,28 +44,28 @@ public class BotanicalWingInit : MonoBehaviour
         // }
 
         if (audioLogPath == "event:/Botanical Wing Scene/LOG_The Light is Out") {
-            if (coroutine != null){
-                StopCoroutine(coroutine);
+            if (cr != null){
+                StopCoroutine(cr);
             }
-            coroutine = StartCoroutine(SubtitleSequence001());
+            cr = StartCoroutine(SubtitleSequence001());
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog") {
-            if (coroutine != null){
-                StopCoroutine(coroutine);
+            if (cr != null){
+                StopCoroutine(cr);
             }
-            coroutine = StartCoroutine(SubtitleSequence002());
+            cr = StartCoroutine(SubtitleSequence002());
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog 2") {
-            if (coroutine != null){
-                StopCoroutine(coroutine);
+            if (cr != null){
+                StopCoroutine(cr);
             }
-            coroutine = StartCoroutine(SubtitleSequence003());
+            cr = StartCoroutine(SubtitleSequence003());
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3") {
-            if (coroutine != null){
-                StopCoroutine(coroutine);
+            if (cr != null){
+                StopCoroutine(cr);
             }
-            coroutine = StartCoroutine(SubtitleSequence004());
+            cr = StartCoroutine(SubtitleSequence004());
         }
         
 
@@ -88,14 +88,25 @@ public class BotanicalWingInit : MonoBehaviour
         else if (isPlaying && !PauseMenu.GamePaused){
             instance.setPaused(false);
         }
+    }
 
-        // if (!isPlaying) {
-        //     foreach (Occlusion occlusion in occlusions)
-        //     {
-        //         occlusion.VolumeValue = 0.75f;
-        //         occlusion.WholeVolumeValue = 1f;
-        //     }
-        // }
+    public void Play()
+    {
+        foreach (Occlusion occ in occlusions)
+        {
+            occ.Play();
+        }
+    }
+
+    public void Stop()
+    {
+        if (cr != null)
+            StopCoroutine(cr);
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        foreach (StudioEventEmitter emitter in emitters)
+        {
+            emitter.Stop();
+        }
     }
 
     IEnumerator SubtitleSequence001() {
