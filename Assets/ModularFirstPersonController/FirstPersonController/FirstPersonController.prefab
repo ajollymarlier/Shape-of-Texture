@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 941513567829461223}
   - component: {fileID: 606001373809144315}
   - component: {fileID: 7042694360917997909}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PauseText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 8397272607519078215}
   - component: {fileID: 5770502718354062196}
   - component: {fileID: 2488710284089988872}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: UI_Elements
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1013,7 +1013,7 @@ GameObject:
   - component: {fileID: 7763812197788951932}
   - component: {fileID: 6842549749001851877}
   - component: {fileID: 6106905759061961807}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: InteractControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 2119043575169139492}
   - component: {fileID: 8188546348107259892}
   - component: {fileID: 1904733391412628313}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Subtitles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

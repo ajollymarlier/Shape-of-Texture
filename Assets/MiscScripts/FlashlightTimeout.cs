@@ -72,5 +72,6 @@ public class FlashlightTimeout : MonoBehaviour
     public void ResetFlashlight(){
         timerValSecs = startingTimerValSecs;
         flashlight.intensity = defaultFlashlightIntensity;
+        lowBattery = false;
     }
 }

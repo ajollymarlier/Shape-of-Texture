@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using FMODUnity;
 
 public class BotanicalWingInit : MonoBehaviour
 {
@@ -10,15 +11,20 @@ public class BotanicalWingInit : MonoBehaviour
     public string audioLogPath;
     public GameObject textBox;
     public Light flashlight;
-    private FMODUnity.StudioEventEmitter emitter;
+    private FMODUnity.StudioEventEmitter[] emitters;
+    private Occlusion[] occlusions;
 
     private FMOD.Studio.EventInstance instance;
     private bool isPlaying;
+
+    public Coroutine coroutine;
     // Start is called before the first frame update
     void Start()
     {
         instance = FMODUnity.RuntimeManager.CreateInstance(audioLogPath);
         isPlaying = false;
+        emitters = GetComponentsInChildren<StudioEventEmitter>();
+        occlusions = GetComponentsInChildren<Occlusion>();
     }
 
     public void handleObjPress(GameObject pressedObj){
@@ -26,19 +32,40 @@ public class BotanicalWingInit : MonoBehaviour
         instance.start();
         isPlaying = true;
 
+        // foreach (StudioEventEmitter emitter in emitters)
+        // {
+        //     emitter.Stop();
+        // }
 
+        // foreach (Occlusion occlusion in occlusions)
+        // {
+        //     occlusion.VolumeValue = 0.45f;
+        //     occlusion.WholeVolumeValue = 0.6f;
+        // }
 
         if (audioLogPath == "event:/Botanical Wing Scene/LOG_The Light is Out") {
-            StartCoroutine(SubtitleSequence001());
+            if (coroutine != null){
+                StopCoroutine(coroutine);
+            }
+            coroutine = StartCoroutine(SubtitleSequence001());
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog") {
-            StartCoroutine(SubtitleSequence002());
+            if (coroutine != null){
+                StopCoroutine(coroutine);
+            }
+            coroutine = StartCoroutine(SubtitleSequence002());
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog 2") {
-            StartCoroutine(SubtitleSequence003());
+            if (coroutine != null){
+                StopCoroutine(coroutine);
+            }
+            coroutine = StartCoroutine(SubtitleSequence003());
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3") {
-            StartCoroutine(SubtitleSequence004());
+            if (coroutine != null){
+                StopCoroutine(coroutine);
+            }
+            coroutine = StartCoroutine(SubtitleSequence004());
         }
         
 
@@ -61,6 +88,14 @@ public class BotanicalWingInit : MonoBehaviour
         else if (isPlaying && !PauseMenu.GamePaused){
             instance.setPaused(false);
         }
+
+        // if (!isPlaying) {
+        //     foreach (Occlusion occlusion in occlusions)
+        //     {
+        //         occlusion.VolumeValue = 0.75f;
+        //         occlusion.WholeVolumeValue = 1f;
+        //     }
+        // }
     }
 
     IEnumerator SubtitleSequence001() {
@@ -70,6 +105,7 @@ public class BotanicalWingInit : MonoBehaviour
         textBox.GetComponent<TextMeshProUGUI>().text = "Don’t let it go out again, or else…";
         yield return new WaitForSeconds(5);
         textBox.GetComponent<TextMeshProUGUI>().text = "";
+        isPlaying = false;
     }
     IEnumerator SubtitleSequence002() {
         yield return new WaitForSeconds(1);
@@ -86,6 +122,7 @@ public class BotanicalWingInit : MonoBehaviour
         textBox.GetComponent<TextMeshProUGUI>().text = "Generally the plants in the biolab should never be left unattended for more than four hours.";
         yield return new WaitForSeconds(6);
         textBox.GetComponent<TextMeshProUGUI>().text = "";
+        isPlaying = false;
     }
 
     IEnumerator SubtitleSequence003() {
@@ -101,6 +138,7 @@ public class BotanicalWingInit : MonoBehaviour
         textBox.GetComponent<TextMeshProUGUI>().text = "which should be in the closets in the back.";
         yield return new WaitForSeconds(2);
         textBox.GetComponent<TextMeshProUGUI>().text = "";
+        isPlaying = false;
     }
 
     IEnumerator SubtitleSequence004() {
@@ -116,5 +154,6 @@ public class BotanicalWingInit : MonoBehaviour
         textBox.GetComponent<TextMeshProUGUI>().text = "take care aboard the station.";
         yield return new WaitForSeconds(2);
         textBox.GetComponent<TextMeshProUGUI>().text = "";
+        isPlaying = false;
     }
 }

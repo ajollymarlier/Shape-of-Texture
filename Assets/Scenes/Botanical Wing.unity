@@ -133,6 +133,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
   m_PrefabInstance: {fileID: 2032954627}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &26241002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26241003}
+  - component: {fileID: 26241005}
+  - component: {fileID: 26241004}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &26241003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26241002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1088944488}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &26241004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26241002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &26241005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26241002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &36453128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -726,6 +810,10 @@ PrefabInstance:
       propertyPath: OverrideMaxDistance
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
       value: 
@@ -1042,6 +1130,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
   m_PrefabInstance: {fileID: 1559209469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &202363503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 202363504}
+  - component: {fileID: 202363506}
+  - component: {fileID: 202363505}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202363504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202363503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 819435538}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &202363505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202363503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &202363506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202363503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &204582066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -1315,6 +1487,90 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2958219597199096320, guid: aa3b3b071fb0e9740adf2f0a164bfb0c, type: 3}
   m_PrefabInstance: {fileID: 784882016}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &252023939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 252023940}
+  - component: {fileID: 252023942}
+  - component: {fileID: 252023941}
+  m_Layer: 0
+  m_Name: Emitter4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &252023940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252023939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1623344160}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &252023941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252023939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &252023942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252023939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -938749274
+      Data2: 1211929477
+      Data3: 281362612
+      Data4: -953886022
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &256224891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1403,6 +1659,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
   m_PrefabInstance: {fileID: 1532836616}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &287173932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287173933}
+  - component: {fileID: 287173935}
+  - component: {fileID: 287173934}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &287173933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287173932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 840603829}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &287173934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287173932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &287173935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287173932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &287383599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -2111,6 +2451,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
   m_PrefabInstance: {fileID: 1040938564}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &372580354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 372580355}
+  - component: {fileID: 372580357}
+  - component: {fileID: 372580356}
+  m_Layer: 0
+  m_Name: Emitter2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372580355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372580354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 625222034}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372580356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372580354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &372580357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372580354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &382349380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2283,6 +2707,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
   m_PrefabInstance: {fileID: 180627981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &416772851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416772852}
+  - component: {fileID: 416772854}
+  - component: {fileID: 416772853}
+  m_Layer: 0
+  m_Name: Emitter5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &416772852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416772851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1206548765}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416772853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416772851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &416772854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416772851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 747488483
+      Data2: 1132820593
+      Data3: 1188958100
+      Data4: -1763868165
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 5
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &422557514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2827,6 +3335,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6df8166c99b1cd44184881d0f60328ac, type: 3}
   m_PrefabInstance: {fileID: 555774970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &481460924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481460925}
+  - component: {fileID: 481460927}
+  - component: {fileID: 481460926}
+  m_Layer: 0
+  m_Name: Emitter2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &481460925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481460924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1651947946}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &481460926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481460924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &481460927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481460924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &484498316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3795,6 +4387,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
   m_PrefabInstance: {fileID: 1541412186}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &588168038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+  m_PrefabInstance: {fileID: 141161908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &596873213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4093,36 +4690,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9173206f309923d42a080cd071c7ea13, type: 3}
   m_PrefabInstance: {fileID: 625222033}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &625222036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625222035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &625222037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4164,13 +4731,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &625222040
+--- !u!1 &625604930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625604931}
+  - component: {fileID: 625604933}
+  - component: {fileID: 625604932}
+  m_Layer: 0
+  m_Name: Emitter4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &625604931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625604930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1206548765}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &625604932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625222035}
+  m_GameObject: {fileID: 625604930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &625604933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625604930}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -4179,11 +4800,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 270956094
-      Data2: 1248789985
-      Data3: 340820377
-      Data4: -962932783
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+      Data1: -938749274
+      Data2: 1211929477
+      Data3: 281362612
+      Data4: -953886022
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
   Event: 
   PlayEvent: 1
   StopEvent: 15
@@ -4191,8 +4812,8 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
   OverrideMaxDistance: 20
 --- !u!1001 &647134125
 PrefabInstance:
@@ -4589,6 +5210,90 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!1 &673783829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673783830}
+  - component: {fileID: 673783832}
+  - component: {fileID: 673783831}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673783830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673783829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1623344160}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673783831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673783829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &673783832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673783829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &676825400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -4859,7 +5564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -49.6
+      value: -61.9
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4899,7 +5604,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 15
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -4980,6 +5689,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
+--- !u!1 &703450279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+  m_PrefabInstance: {fileID: 694317698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &703450285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703450279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1001 &722328179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5045,6 +5780,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
+--- !u!1 &727310396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727310397}
+  - component: {fileID: 727310399}
+  - component: {fileID: 727310398}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727310397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727310396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937310959}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &727310398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727310396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &727310399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727310396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &739644060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94be305a42b8758468ac052961bf6eb7, type: 3}
@@ -5065,6 +5884,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
   m_PrefabInstance: {fileID: 838948299}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &753285894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753285895}
+  - component: {fileID: 753285897}
+  - component: {fileID: 753285896}
+  m_Layer: 0
+  m_Name: Emitter2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &753285895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753285894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1206548765}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753285896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753285894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &753285897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753285894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1 &756401482
 GameObject:
   m_ObjectHideFlags: 0
@@ -5304,6 +6207,90 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &784206049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 784206050}
+  - component: {fileID: 784206052}
+  - component: {fileID: 784206051}
+  m_Layer: 0
+  m_Name: Emitter3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &784206050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784206049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 840603829}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &784206051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784206049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &784206052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784206049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &784882016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5506,6 +6493,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aa3b3b071fb0e9740adf2f0a164bfb0c, type: 3}
   m_PrefabInstance: {fileID: 784882016}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &796095220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+  m_PrefabInstance: {fileID: 1860304575}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &819435537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5613,13 +6605,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &819435542
-MonoBehaviour:
+--- !u!65 &819435543
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819435539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9, z: 0.5}
+  m_Center: {x: -6.5, y: 2.2, z: 0.1}
+--- !u!1 &821241613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821241614}
+  - component: {fileID: 821241616}
+  - component: {fileID: 821241615}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &821241614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821241613}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1206548765}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &821241615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821241613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &821241616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821241613}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -5640,111 +6699,8 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!65 &819435543
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819435539}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9, z: 0.5}
-  m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &819435544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819435539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -938749274
-      Data2: 1211929477
-      Data3: 281362612
-      Data4: -953886022
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &819435545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819435539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 114212844
-      Data2: 1154955753
-      Data3: -618818635
-      Data4: 594590867
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &819435546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819435539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 270956094
-      Data2: 1248789985
-      Data3: 340820377
-      Data4: -962932783
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
   OverrideMaxDistance: 20
 --- !u!1001 &825991285
 PrefabInstance:
@@ -6069,36 +7025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &840603833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840603830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!65 &840603834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6112,66 +7038,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &840603835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840603830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 270956094
-      Data2: 1248789985
-      Data3: 340820377
-      Data4: -962932783
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &840603836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840603830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 114212844
-      Data2: 1154955753
-      Data3: -618818635
-      Data4: 594590867
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &844705195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6752,6 +7618,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
+--- !u!1 &956267341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 956267342}
+  - component: {fileID: 956267344}
+  - component: {fileID: 956267343}
+  m_Layer: 0
+  m_Name: Emitter3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &956267342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956267341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937310959}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &956267343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956267341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &956267344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956267341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1 &957503253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6767,7 +7717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &957503254
 Transform:
   m_ObjectHideFlags: 0
@@ -6946,36 +7896,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9173206f309923d42a080cd071c7ea13, type: 3}
   m_PrefabInstance: {fileID: 975331909}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &975331912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975331911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &975331913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7745,36 +8665,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &1088944492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088944487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1093750652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8805,156 +9695,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &1206548771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!1 &1216708104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+  m_PrefabInstance: {fileID: 1850178434}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206548766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1206548772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206548766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 747488483
-      Data2: 1132820593
-      Data3: 1188958100
-      Data4: -1763868165
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 5
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1206548773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206548766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -938749274
-      Data2: 1211929477
-      Data3: 281362612
-      Data4: -953886022
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1206548774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206548766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 114212844
-      Data2: 1154955753
-      Data3: -618818635
-      Data4: 594590867
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1206548775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206548766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 270956094
-      Data2: 1248789985
-      Data3: 340820377
-      Data4: -962932783
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1227127256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9028,6 +9773,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
+--- !u!1 &1229081221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229081222}
+  - component: {fileID: 1229081224}
+  - component: {fileID: 1229081223}
+  m_Layer: 0
+  m_Name: Emitter2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229081222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229081221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1623344160}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1229081223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229081221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1229081224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229081221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &1229287295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9430,6 +10259,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1290091564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+  m_PrefabInstance: {fileID: 1597086543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1298088336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9693,6 +10527,116 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0e37de8606e26a4b89d59d500535827, type: 3}
+--- !u!1 &1335649227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335649228}
+  - component: {fileID: 1335649230}
+  - component: {fileID: 1335649229}
+  m_Layer: 0
+  m_Name: Emitter3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1335649228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335649227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1206548765}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335649229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335649227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1335649230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335649227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
+--- !u!1 &1337196489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+  m_PrefabInstance: {fileID: 2028048456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1337196495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337196489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1001 &1347650035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10138,11 +11082,200 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
   m_PrefabInstance: {fileID: 1860304575}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1401070877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796095220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!1 &1415669408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415669409}
+  - component: {fileID: 1415669411}
+  - component: {fileID: 1415669410}
+  m_Layer: 0
+  m_Name: Emitter4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1415669409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415669408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 819435538}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1415669410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415669408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1415669411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415669408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -938749274
+      Data2: 1211929477
+      Data3: 281362612
+      Data4: -953886022
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &1429781830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6df8166c99b1cd44184881d0f60328ac, type: 3}
   m_PrefabInstance: {fileID: 596873213}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1431506166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1431506167}
+  - component: {fileID: 1431506169}
+  - component: {fileID: 1431506168}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1431506167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431506166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1651947946}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1431506168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431506166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1431506169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431506166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &1432130357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -10406,6 +11539,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
   m_PrefabInstance: {fileID: 697937645}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1505217999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505218000}
+  - component: {fileID: 1505218002}
+  - component: {fileID: 1505218001}
+  m_Layer: 0
+  m_Name: Emitter2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1505218000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505217999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937310959}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505218001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505217999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1505218002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505217999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1 &1529044725
 GameObject:
   m_ObjectHideFlags: 0
@@ -10809,6 +12026,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
   m_PrefabInstance: {fileID: 141161908}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1568003133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588168038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1001 &1569410947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11169,7 +12407,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 5
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -11182,6 +12424,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
   m_PrefabInstance: {fileID: 1597086543}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1597086550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290091564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.5
+  WholeVolumeValue: 1
+  LPFCutoff: 10000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &1607205142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3735957691742723320, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
@@ -11330,126 +12593,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &1623344166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623344161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 270956094
-      Data2: 1248789985
-      Data3: 340820377
-      Data4: -962932783
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1623344167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623344161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1623344168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623344161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -938749274
-      Data2: 1211929477
-      Data3: 281362612
-      Data4: -953886022
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1623344169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623344161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -938749274
-      Data2: 1211929477
-      Data3: 281362612
-      Data4: -953886022
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 4
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &1635440944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
@@ -11609,36 +12752,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9173206f309923d42a080cd071c7ea13, type: 3}
   m_PrefabInstance: {fileID: 1651947945}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1651947948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651947947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &1651947949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11680,36 +12793,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &1651947952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651947947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 270956094
-      Data2: 1248789985
-      Data3: 340820377
-      Data4: -962932783
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1655037797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12157,6 +13240,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6df8166c99b1cd44184881d0f60328ac, type: 3}
   m_PrefabInstance: {fileID: 1045100302}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1710026696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1710026697}
+  - component: {fileID: 1710026699}
+  - component: {fileID: 1710026698}
+  m_Layer: 0
+  m_Name: Emitter3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1710026697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710026696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1623344160}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1710026698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710026696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1710026699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710026696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &1722906477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12339,6 +13506,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
   m_PrefabInstance: {fileID: 1850178434}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1775119574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216708104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1001 &1798317235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12702,6 +13890,10 @@ PrefabInstance:
       propertyPath: OverrideMaxDistance
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
       value: 
@@ -12775,6 +13967,10 @@ PrefabInstance:
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -12962,6 +14158,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
   m_PrefabInstance: {fileID: 8159261359961171480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1899315184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899315185}
+  - component: {fileID: 1899315187}
+  - component: {fileID: 1899315186}
+  m_Layer: 0
+  m_Name: Emitter2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1899315185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899315184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 840603829}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899315186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899315184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1899315187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899315184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &1900365642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
@@ -13040,6 +14320,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4e54a31b55c39640b0e77a7c45df638, type: 3}
+--- !u!1 &1904959166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1904959167}
+  - component: {fileID: 1904959169}
+  - component: {fileID: 1904959168}
+  m_Layer: 0
+  m_Name: Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1904959167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904959166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 975331910}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904959168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904959166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1904959169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904959166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2083550607
+      Data2: 1267609465
+      Data3: -636890700
+      Data4: -197883952
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1 &1906342058
 GameObject:
   m_ObjectHideFlags: 0
@@ -13566,36 +14930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1937310963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937310960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2083550607
-      Data2: 1267609465
-      Data3: -636890700
-      Data4: -197883952
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!65 &1937310964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13609,66 +14943,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9, z: 0.5}
   m_Center: {x: -6.5, y: 2.2, z: 0.1}
---- !u!114 &1937310965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937310960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 114212844
-      Data2: 1154955753
-      Data3: -618818635
-      Data4: 594590867
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1937310966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937310960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 270956094
-      Data2: 1248789985
-      Data3: 340820377
-      Data4: -962932783
-    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
-  Event: 
-  PlayEvent: 1
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1937538790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13891,6 +15165,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 80d1d86e65f58704795cc2e78a3ef3f2, type: 3}
   m_PrefabInstance: {fileID: 1968792259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1970496168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970496169}
+  - component: {fileID: 1970496171}
+  - component: {fileID: 1970496170}
+  m_Layer: 0
+  m_Name: Emitter2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970496169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970496168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 819435538}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970496170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970496168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &1970496171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970496168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 270956094
+      Data2: 1248789985
+      Data3: 340820377
+      Data4: -962932783
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!4 &1981291187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
@@ -13969,6 +15327,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6df8166c99b1cd44184881d0f60328ac, type: 3}
+--- !u!1 &2002997539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2002997540}
+  - component: {fileID: 2002997542}
+  - component: {fileID: 2002997541}
+  m_Layer: 0
+  m_Name: Emitter3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2002997540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002997539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47, y: 2.11, z: 0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 819435538}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2002997541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002997539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &2002997542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002997539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 114212844
+      Data2: 1154955753
+      Data3: -618818635
+      Data4: 594590867
+    Path: event:/Botanical Wing Scene/AMB_pickup_sounds/amb_pickupssep 3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1001 &2028048456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14031,6 +15473,10 @@ PrefabInstance:
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
@@ -14919,6 +16365,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
+--- !u!1 &2146342775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734899049245749586, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+  m_PrefabInstance: {fileID: 8159261359961171480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2146342781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146342775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0fe1438f28fc54fb4b0af6a7ab7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio: 
+  Emitter: {fileID: 0}
+  VolumeValue: 0.7
+  WholeVolumeValue: 1
+  LPFCutoff: 11000
+  WholeCutoff: 22000
+  OcclusionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1001 &8159261359961171480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14981,6 +16453,10 @@ PrefabInstance:
     - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: OverrideMaxDistance
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390695809226237777, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8970086973424724405, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: flashlight
