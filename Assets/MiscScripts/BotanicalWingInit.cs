@@ -32,16 +32,10 @@ public class BotanicalWingInit : MonoBehaviour
         instance.start();
         isPlaying = true;
 
-        // foreach (StudioEventEmitter emitter in emitters)
-        // {
-        //     emitter.Stop();
-        // }
-
-        // foreach (Occlusion occlusion in occlusions)
-        // {
-        //     occlusion.VolumeValue = 0.45f;
-        //     occlusion.WholeVolumeValue = 0.6f;
-        // }
+        foreach (StudioEventEmitter emitter in emitters)
+        {
+            emitter.Stop();
+        }
 
         if (audioLogPath == "event:/Botanical Wing Scene/LOG_The Light is Out") {
             if (cr != null){
