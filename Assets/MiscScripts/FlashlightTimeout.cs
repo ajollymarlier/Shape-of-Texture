@@ -17,6 +17,7 @@ public class FlashlightTimeout : MonoBehaviour
     public GameObject warningText;
     public string deathAudioLogPath;
     private FMOD.Studio.EventInstance instance;
+    private bool isGameOver;
 
     public Animator animator;
 
@@ -45,9 +46,10 @@ public class FlashlightTimeout : MonoBehaviour
             flashlight.intensity -= fadeAmount * Time.deltaTime;
 
             // No battery
-            if (timerValSecs < 0)
+            if (timerValSecs < 0 && !isGameOver)
             {
                 flashlight.intensity = 0;
+                isGameOver = true;
                 GameOver();
             }
             // Low battery
@@ -110,15 +112,15 @@ public class FlashlightTimeout : MonoBehaviour
     }
 
     private void GameOver(){
-        // instance = FMODUnity.RuntimeManager.CreateInstance(deathAudioLogPath);
-        // instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        // instance.start();
+        instance = FMODUnity.RuntimeManager.CreateInstance(deathAudioLogPath);
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        instance.start();
         StartCoroutine(flashlightBlackoutSequence());
     }
 
     private IEnumerator flashlightBlackoutSequence(){
         yield return new WaitForSeconds(5);
-        //instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         restartLevel();
     }
 
