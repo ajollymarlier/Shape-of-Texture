@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class FlashlightTimeout : MonoBehaviour
 {
@@ -13,16 +14,25 @@ public class FlashlightTimeout : MonoBehaviour
     public float flashingIntensity;
     public bool losingBattery;
     private Light flashlight;
+    public GameObject warningText;
+
+    public Animator animator;
 
     private bool lowBattery;
+
+    private bool text1;
+    private bool text2;
     // Start is called before the first frame update
     void Start()
     {
         timerValSecs = startingTimerValSecs;
         lowBattery = false;
+        text1 = false;
+        text2 = false;
         flashlight = GetComponent<Light>();
         defaultFlashlightIntensity = flashlight.intensity;
         flashingIntensity = defaultFlashlightIntensity - (startingTimerValSecs - lowBatteryTime) * fadeAmount;
+        animator = warningText.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,6 +52,7 @@ public class FlashlightTimeout : MonoBehaviour
             else if (timerValSecs < lowBatteryTime)
             {   
                 lowBattery = true;
+                text1 = true;
             }
             // else if (timerValSecs < lowBatteryTime){
             //     lowBattery = true;
@@ -60,6 +71,38 @@ public class FlashlightTimeout : MonoBehaviour
                     flashlight.intensity = flashingIntensity;
                 }
             }
+            if (lowBattery && text1)
+            {
+                // change warning text
+                warningText.GetComponent<TextMeshProUGUI>().text = "Warning: Find a battery";
+                animator.SetTrigger("Warned");
+                animator.ResetTrigger("Reset");
+            }
+            if (timerValSecs < lowBatteryTime / 2)
+            {
+                text1 = false;
+                text2 = true;
+            }
+            if (lowBattery && text2)
+            {
+                if (timerValSecs % 2 < 0.5){
+                    // change warning text
+                    warningText.GetComponent<TextMeshProUGUI>().text = "Warning: Find a BATTERY";
+                }
+                else if (timerValSecs % 2 < 1){
+                    // change warning text
+                    warningText.GetComponent<TextMeshProUGUI>().text = "Warning: Find A battery";
+                }
+                else if (timerValSecs % 2 < 1.5){
+                    // change warning text
+                    warningText.GetComponent<TextMeshProUGUI>().text = "Warning: FIND a battery";
+                }
+                else
+                {
+                    // change warning text
+                    warningText.GetComponent<TextMeshProUGUI>().text = "WARNING: Find a battery";
+                }
+            }
         }
         
     }
@@ -73,5 +116,10 @@ public class FlashlightTimeout : MonoBehaviour
         timerValSecs = startingTimerValSecs;
         flashlight.intensity = defaultFlashlightIntensity;
         lowBattery = false;
+        text1 = false;
+        text2 = false;
+        warningText.GetComponent<TextMeshProUGUI>().text = "";
+        animator.ResetTrigger("Warned");
+        animator.SetTrigger("Reset");
     }
 }

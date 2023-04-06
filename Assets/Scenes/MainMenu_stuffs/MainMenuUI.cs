@@ -12,6 +12,8 @@ public class MainMenuUI : MonoBehaviour{
     public GameObject title;
     public GameObject mainMenuUI;
     public GameObject optionsMenuUI;
+    public GameObject playMenuUI;
+    public GameObject levelMenuUI;
 
     private Volume globalVolume;
 
@@ -84,12 +86,26 @@ public class MainMenuUI : MonoBehaviour{
         graphicsDropdown.GetComponent<TMP_Dropdown>().value = qualityIndex;
     }
 
+    public void ToPlayMenu()
+    {
+        title.SetActive(false);
+        mainMenuUI.SetActive(false);
+        playMenuUI.SetActive(true);
+    }
+
     public void PlayTheGame ()
 	{
         PauseMenu.GamePaused = false;
 		SceneManager.LoadScene(1);
-		GameObject.Find("Play_Game_Button").GetComponent<MenuButtonSFX>().stopsound();
+		gameObject.GetComponent<MenuButtonSFX>().stopsound();
 	}
+
+    public void PlayLevel(int level)
+    {
+        PauseMenu.GamePaused = false;
+		SceneManager.LoadScene(level);
+		gameObject.GetComponent<MenuButtonSFX>().stopsound();
+    }
 
     public void Options()
     {
@@ -109,6 +125,14 @@ public class MainMenuUI : MonoBehaviour{
         title.SetActive(true);
         mainMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
+        playMenuUI.SetActive(false);
+        levelMenuUI.SetActive(false);
+    }
+
+    public void ToLevelMenu()
+    {
+        playMenuUI.SetActive(false);
+        levelMenuUI.SetActive(true);
     }
 
     public void SetVolume(float volume)

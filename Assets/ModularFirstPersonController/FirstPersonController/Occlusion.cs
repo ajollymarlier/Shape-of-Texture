@@ -36,9 +36,9 @@ public class Occlusion : MonoBehaviour
     {
         instance = Emitter.EventInstance;
         // instance.start();
-        VolumeValue = 0.8f;
+        VolumeValue = 0.75f;
         WholeVolumeValue = 1f;
-        LPFCutoff = 12000f;
+        LPFCutoff = 11500f;
         WholeCutoff = 22000f;
         active = false;
     }
