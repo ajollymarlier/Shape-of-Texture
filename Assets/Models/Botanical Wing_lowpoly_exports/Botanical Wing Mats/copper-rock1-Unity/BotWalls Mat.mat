@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5974266064194409389
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BotWalls Mat
+  m_Shader: {fileID: -6465566751694194690, guid: bd1a019b53d1d204ba74cf90f8f7cd2a, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_800e7ffcc5a34975bce16708a192391f_Texture_1:
+        m_Texture: {fileID: 2800000, guid: ed4e44c18963cff4ab2c106942ca04df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a271ae57c7b740568f2b4dd540ff7e6f_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 18fa6b58a85528c4380c031db04cf1dc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c11b0dbe6d2d4a88b34bd1c8593cb9d8_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 12c7fa68fecd1034bbe928ce35f87590, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c7453f50f4734ecc89cbc772142e07bd_Texture_1:
+        m_Texture: {fileID: 2800000, guid: ed4e44c18963cff4ab2c106942ca04df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_f6ef457ec3a14a71ab441ef44a8ab658_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b2bf8cef068024b4cac6f94890a7a02c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Height_Strength: 0.431
+    - _Pulsing_Speed: 0.5
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Smoothness: 0.417
+    m_Colors:
+    - _Color_Pulse: {r: 0, g: 0.7171548, b: 0.7464264, a: 1}
+    - _Min_Max_Pulse_Intensity: {r: 0, g: 0.02, b: 0, a: 0}
+    - _Tiling: {r: 2.5, g: 2.5, b: 0, a: 0}
+  m_BuildTextureStacks: []
