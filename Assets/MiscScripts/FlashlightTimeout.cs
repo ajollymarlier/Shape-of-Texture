@@ -109,7 +109,37 @@ public class FlashlightTimeout : MonoBehaviour
 
     private void GameOver(){
         GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
-        SceneManager.LoadScene("Botanical Wing");
+
+        
+        //SceneManager.LoadScene("Botanical Wing");
+        restartLevel();
+    }
+
+    private void restartLevel(){
+        Time.timeScale = 1f;
+        GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
+        int index = SceneManager.GetActiveScene().buildIndex;
+        if (index == 1)
+        {
+            TutorialInit[] inits = GameObject.FindObjectsOfType<TutorialInit>();
+            foreach (TutorialInit init in inits)
+                init.Stop();
+        }
+        else if (index == 2)
+        {
+            GameObject.Find("SubtitleManager").GetComponent<MedBaySubtitle>().Stop();
+        }
+        else if (index == 3)
+        {
+            GameObject.Find("SubtitleManager").GetComponent<ControlCentreSubtitle>().Stop();
+        }
+        else if (index == 4)
+        {
+            BotanicalWingInit[] inits = GameObject.FindObjectsOfType<BotanicalWingInit>();
+            foreach (BotanicalWingInit init in inits)
+                init.Stop();
+        }
+        SceneManager.LoadScene(index);
     }
 
     public void ResetFlashlight(){
