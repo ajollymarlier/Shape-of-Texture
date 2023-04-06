@@ -110,15 +110,15 @@ public class FlashlightTimeout : MonoBehaviour
     }
 
     private void GameOver(){
-        instance = FMODUnity.RuntimeManager.CreateInstance(deathAudioLogPath);
-        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        instance.start();
+        // instance = FMODUnity.RuntimeManager.CreateInstance(deathAudioLogPath);
+        // instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        // instance.start();
         StartCoroutine(flashlightBlackoutSequence());
     }
 
     private IEnumerator flashlightBlackoutSequence(){
         yield return new WaitForSeconds(5);
-        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        //instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         restartLevel();
     }
 
