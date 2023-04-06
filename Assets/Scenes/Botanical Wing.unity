@@ -9810,6 +9810,7 @@ MonoBehaviour:
   flashingIntensity: 2
   losingBattery: 1
   warningText: {fileID: 0}
+  deathAudioLogPath: 
   animator: {fileID: 0}
 --- !u!114 &651123744
 MonoBehaviour:
@@ -24114,11 +24115,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingTimerValSecs: 90
   timerValSecs: 0
-  lowBatteryTime: 20
+  lowBatteryTime: 15
   fadeAmount: 0.02
   flashingIntensity: 2
   losingBattery: 0
   warningText: {fileID: 1298088338}
+  deathAudioLogPath: event:/Botanical Wing Scene/RandomWhispers
   animator: {fileID: 0}
 --- !u!108 &1607205148 stripped
 Light:
