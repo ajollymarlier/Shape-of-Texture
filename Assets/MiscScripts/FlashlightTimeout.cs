@@ -8,13 +8,15 @@ public class FlashlightTimeout : MonoBehaviour
 {
     public float startingTimerValSecs;
     public float timerValSecs;
-    public float lowBatteryTime = 10;
+    public float lowBatteryTime;
     public float fadeAmount = 0.02f;
     private float defaultFlashlightIntensity;
     public float flashingIntensity;
     public bool losingBattery;
     private Light flashlight;
     public GameObject warningText;
+    public string deathAudioLogPath;
+    private FMOD.Studio.EventInstance instance;
 
     public Animator animator;
 
@@ -25,7 +27,7 @@ public class FlashlightTimeout : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerValSecs = startingTimerValSecs;
+        timerValSecs = lowBatteryTime;
         lowBattery = false;
         text1 = false;
         text2 = false;
@@ -108,8 +110,43 @@ public class FlashlightTimeout : MonoBehaviour
     }
 
     private void GameOver(){
+        // instance = FMODUnity.RuntimeManager.CreateInstance(deathAudioLogPath);
+        // instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        // instance.start();
+        StartCoroutine(flashlightBlackoutSequence());
+    }
+
+    private IEnumerator flashlightBlackoutSequence(){
+        yield return new WaitForSeconds(5);
+        //instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        restartLevel();
+    }
+
+    private void restartLevel(){
+        Time.timeScale = 1f;
         GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
-        SceneManager.LoadScene("Botanical Wing");
+        int index = SceneManager.GetActiveScene().buildIndex;
+        if (index == 1)
+        {
+            TutorialInit[] inits = GameObject.FindObjectsOfType<TutorialInit>();
+            foreach (TutorialInit init in inits)
+                init.Stop();
+        }
+        else if (index == 2)
+        {
+            GameObject.Find("SubtitleManager").GetComponent<MedBaySubtitle>().Stop();
+        }
+        else if (index == 3)
+        {
+            GameObject.Find("SubtitleManager").GetComponent<ControlCentreSubtitle>().Stop();
+        }
+        else if (index == 4)
+        {
+            BotanicalWingInit[] inits = GameObject.FindObjectsOfType<BotanicalWingInit>();
+            foreach (BotanicalWingInit init in inits)
+                init.Stop();
+        }
+        SceneManager.LoadScene(index);
     }
 
     public void ResetFlashlight(){
