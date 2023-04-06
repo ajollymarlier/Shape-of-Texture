@@ -59,10 +59,12 @@ public class ControlCentreSubtitle : MonoBehaviour
         yield return new WaitForSeconds(2);
         textBox.GetComponent<TextMeshProUGUI>().text = "so you can get anywhere from there.";
         yield return new WaitForSeconds(2);
-        textBox.GetComponent<TextMeshProUGUI>().text = "Just ignore the big super-console and you should be fine.";
-        yield return new WaitForSeconds(3);
+        textBox.GetComponent<TextMeshProUGUI>().text = "Just ignore the big super-console,";
+        yield return new WaitForSeconds(2.5f);
+        textBox.GetComponent<TextMeshProUGUI>().text = "and you should be fine.";
+        yield return new WaitForSeconds(1.5f);
         textBox.GetComponent<TextMeshProUGUI>().text = "Again, apologies and I hope it works. Franks out.";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(3.5f);
         textBox.GetComponent<TextMeshProUGUI>().text = "";
     }
 }

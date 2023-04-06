@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 #if UNITY_EDITOR
     using UnityEditor;
@@ -13,11 +14,13 @@ public class ButtonPuzzleInit : MonoBehaviour
     public GameObject[] orderedButtons;
     private int i;
     private bool inProgress;
+    private FMODUnity.StudioEventEmitter emitter;
     // Start is called before the first frame update
     void Start()
     {
         i=0;
         inProgress = false;
+        emitter = gameObject.GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     // Update is called once per frame
@@ -75,6 +78,10 @@ public class ButtonPuzzleInit : MonoBehaviour
                 leftDoor.SetActive(false);
                 // Play sound
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Medical Bay Intro Scene/SFX_Doors_open", transform.position);
+
+                // Stop emitter
+                if (emitter != null)
+                    emitter.EventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
     }
