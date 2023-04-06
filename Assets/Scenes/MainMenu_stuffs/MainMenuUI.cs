@@ -93,18 +93,39 @@ public class MainMenuUI : MonoBehaviour{
         playMenuUI.SetActive(true);
     }
 
-    public void PlayTheGame ()
+    public void PlayTheGame (GameObject button)
 	{
         PauseMenu.GamePaused = false;
+        button.GetComponent<MenuButtonSFX>().stopsound();
 		SceneManager.LoadScene(1);
-		gameObject.GetComponent<MenuButtonSFX>().stopsound();
 	}
 
-    public void PlayLevel(int level)
+    public void PlayLevel1(GameObject button)
     {
         PauseMenu.GamePaused = false;
-		SceneManager.LoadScene(level);
-		gameObject.GetComponent<MenuButtonSFX>().stopsound();
+        button.GetComponent<MenuButtonSFX>().stopsound();
+		SceneManager.LoadScene(1);
+    }
+
+    public void PlayLevel2(GameObject button)
+    {
+        PauseMenu.GamePaused = false;
+        button.GetComponent<MenuButtonSFX>().stopsound();
+		SceneManager.LoadScene(2);
+    }
+
+    public void PlayLevel3(GameObject button)
+    {
+        PauseMenu.GamePaused = false;
+        button.GetComponent<MenuButtonSFX>().stopsound();
+		SceneManager.LoadScene(3);
+    }
+
+    public void PlayLevel4(GameObject button)
+    {
+        PauseMenu.GamePaused = false;
+        button.GetComponent<MenuButtonSFX>().stopsound();
+		SceneManager.LoadScene(4);
     }
 
     public void Options()

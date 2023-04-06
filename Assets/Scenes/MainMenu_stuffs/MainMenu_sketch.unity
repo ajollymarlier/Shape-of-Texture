@@ -4118,11 +4118,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 16890763}
         m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
-        m_MethodName: PlayLevel
-        m_Mode: 3
+        m_MethodName: PlayLevel3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 454701329}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6598,11 +6598,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 16890763}
         m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
-        m_MethodName: PlayLevel
-        m_Mode: 3
+        m_MethodName: PlayLevel2
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1035631683}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9031,10 +9031,10 @@ MonoBehaviour:
       - m_Target: {fileID: 16890763}
         m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
         m_MethodName: PlayTheGame
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1447799672}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9394,11 +9394,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 16890763}
         m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
-        m_MethodName: PlayLevel
-        m_Mode: 3
+        m_MethodName: PlayLevel1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1524429138}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
@@ -12543,11 +12543,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 16890763}
         m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
-        m_MethodName: PlayLevel
-        m_Mode: 3
+        m_MethodName: PlayLevel4
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1899850750}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
