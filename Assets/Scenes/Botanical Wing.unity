@@ -24120,7 +24120,7 @@ MonoBehaviour:
   flashingIntensity: 2
   losingBattery: 0
   warningText: {fileID: 1298088338}
-  deathAudioLogPath: event:/Botanical Wing Scene/RandomWhispers
+  deathAudioLogPath: event:/Botanical Wing Scene/GameOver
   animator: {fileID: 0}
 --- !u!108 &1607205148 stripped
 Light:
@@ -26963,6 +26963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcf8dc5ea428e4f4d9fb9da520388572, type: 3}
+--- !u!1 &1798351894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 80d1d86e65f58704795cc2e78a3ef3f2, type: 3}
+  m_PrefabInstance: {fileID: 1813846075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1804577351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27156,6 +27161,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 80d1d86e65f58704795cc2e78a3ef3f2, type: 3}
   m_PrefabInstance: {fileID: 1813846075}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1813846080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798351894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -706433870
+      Data2: 1205598306
+      Data3: 1456419981
+      Data4: -1359833384
+    Path: event:/Botanical Wing Scene/SFX_TVStatic
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1815921334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2162990221334118092, guid: 2599ae8159dd9b0429ad966de2dd4eee, type: 3}
