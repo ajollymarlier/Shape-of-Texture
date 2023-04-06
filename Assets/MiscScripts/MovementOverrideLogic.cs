@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class MovementOverrideLogic : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MovementOverrideLogic : MonoBehaviour
     public GameObject teleportMarker;
     public GameObject structure;
     public float moveSpeed;
+    public GameObject tvWithEmitter;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class MovementOverrideLogic : MonoBehaviour
         {
             flashlight.GetComponent<FlashlightTimeout>().losingBattery = false;
             flashlight.intensity = flashlight.GetComponent<FlashlightTimeout>().flashingIntensity;
+            tvWithEmitter.GetComponent<StudioEventEmitter>().enabled = true;
         }
         if (triggered && !teleported){
             if (player.transform.position.z < staticScreen.transform.position.z){

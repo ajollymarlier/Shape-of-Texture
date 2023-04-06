@@ -28,7 +28,7 @@ public class FlashlightTimeout : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerValSecs = lowBatteryTime;
+        timerValSecs = lowBatteryTime + 4;
         lowBattery = false;
         text1 = false;
         text2 = false;
