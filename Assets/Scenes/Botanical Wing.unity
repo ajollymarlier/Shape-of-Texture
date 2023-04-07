@@ -1481,7 +1481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 119
+      value: 118.999985
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1497,15 +1497,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9296,6 +9296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!114 &625222038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12592,6 +12595,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!65 &819435543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13034,6 +13040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!65 &840603834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14572,22 +14581,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2299f54bae2531c40832dff656bec91e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lock1: {fileID: 1088944487}
-  lock2: {fileID: 975331911}
-  lock3: {fileID: 625222035}
-  lock4: {fileID: 1651947947}
-  lock5: {fileID: 1937310960}
-  lock6: {fileID: 840603830}
-  lock7: {fileID: 819435539}
-  lock8: {fileID: 1623344161}
-  lock9: {fileID: 1206548766}
-  battery1: {fileID: 1290091564}
-  battery2: {fileID: 796095220}
-  battery3: {fileID: 2146342775}
-  battery4: {fileID: 703450279}
-  battery5: {fileID: 1216708104}
-  battery6: {fileID: 1337196489}
-  battery7: {fileID: 588168038}
+  firstLocks:
+  - {fileID: 1088944487}
+  - {fileID: 975331911}
+  - {fileID: 625222035}
+  secondLocks:
+  - {fileID: 1651947947}
+  - {fileID: 1937310960}
+  - {fileID: 840603830}
+  - {fileID: 819435539}
+  - {fileID: 1623344161}
+  - {fileID: 1206548766}
+  firstBatteries:
+  - {fileID: 1290091564}
+  - {fileID: 796095220}
+  - {fileID: 2146342775}
+  secondBatteries:
+  - {fileID: 703450279}
+  - {fileID: 1216708104}
+  - {fileID: 1337196489}
+  - {fileID: 588168038}
 --- !u!65 &971051791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14780,6 +14793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!114 &975331914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15992,6 +16008,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!65 &1088944491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17898,6 +17917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!114 &1206548769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24278,6 +24300,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!114 &1623344164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24760,6 +24785,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!114 &1651947950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26710,6 +26738,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!65 &1769774066
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27502,7 +27533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -93.8
+      value: -93.799995
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27510,7 +27541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 144.1
+      value: 144.10007
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27518,15 +27549,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -29132,6 +29163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
 --- !u!65 &1937310964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30219,7 +30253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.5
+      value: 41.500008
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30227,7 +30261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 139.1
+      value: 139.09998
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30235,15 +30269,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 438212656462784917, guid: 25dbbbd587e4cdf498004d402174d88d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -31236,6 +31270,8 @@ MonoBehaviour:
   structure: {fileID: 1276083176}
   moveSpeed: 1
   tvWithEmitter: {fileID: 1798351894}
+  warningText: {fileID: 1298088338}
+  animator: {fileID: 0}
 --- !u!1001 &2108002517
 PrefabInstance:
   m_ObjectHideFlags: 0

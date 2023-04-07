@@ -11,7 +11,8 @@ public class PlayerInteraction : MonoBehaviour
     private RectTransform reticleRect;
     private TextMeshProUGUI interactText;
     // private Image reticleImage;
-    public bool canInteract;
+    public bool inMedBay;
+    public bool initCanInteract;
 
     // Start is called before the first frame update
     void Start()
@@ -21,18 +22,20 @@ public class PlayerInteraction : MonoBehaviour
         // reticleImage = gameObject.transform.Find("CrosshairAndStamina/Reticle").GetComponent<Image>();
         if (SceneManager.GetActiveScene().name == "Final Medical Bay")
         {
-            canInteract = false;
+            inMedBay = true;
+            initCanInteract = false;
+            
             StartCoroutine(WaitToInteract());
         }
         else
         {
-            canInteract = true;
+            inMedBay = false;
         }
     }
 
     public IEnumerator WaitToInteract() {
         yield return new WaitForSeconds(27.01f);
-        canInteract = true;
+        initCanInteract = true;
     }
 
     // Update is called once per frame
@@ -44,18 +47,49 @@ public class PlayerInteraction : MonoBehaviour
             if(lookingatInteractable.Item1)
             {
                 reticleRect.sizeDelta = new Vector2(200, 200);
-                if (canInteract)
+                Interactable item = lookingatInteractable.Item2;
+                if (item.GetType() == typeof(Pressable) && ((Pressable)item).pressed && !((Pressable)item).sequenceEnded)
+                {
+                    interactText.text = "";
+                }
+                else if (!inMedBay)
                 {
                     interactText.text = "[E]/[Left Click] - Interact";
                     if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
                     {
-                        // reticleImage.color = new Color32(153, 153, 153, 100);
-                        CheckInteraction(lookingatInteractable.Item2);
+                        CheckInteraction(item);
                     }
                 }
                 else
                 {
-                    interactText.text = "Wait until log is over to Interact";
+                    if (item.GetType() == typeof(PuzzleStart) && !initCanInteract)
+                    {
+                        interactText.text = "Please wait until log is over...";
+                    }
+
+                    else if (item.GetType() == typeof(PuzzleStart) && ((PuzzleStart)item).triggered)
+                    {
+                        interactText.text = "";
+                    }
+
+                    else if (item.GetType() == typeof(Pressable) && !((Pressable)item).medBayCanPress)
+                    {
+                        interactText.text = "Initialize door sequence first";
+                    }
+
+                    else if (item.GetType() == typeof(Pressable) && ((Pressable)item).sequenceEnded)
+                    {
+                        interactText.text = "Sequence completed";
+                    }
+
+                    else
+                    {
+                        interactText.text = "[E]/[Left Click] - Interact";
+                        if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+                        {
+                            CheckInteraction(item);
+                        }
+                    }
                 }
                 
             }
@@ -79,18 +113,6 @@ public class PlayerInteraction : MonoBehaviour
         Ray landingRay = new Ray(transform.position, transform.forward);
 
         if (canCast){
-            // RaycastHit[] hits = Physics.RaycastAll(landingRay, 4.5f);
-            // if (hits.Length > 0)
-            // {
-            //     foreach(RaycastHit hit in hits){
-            //         Debug.Log("Trying to interact with " + hit.collider.name);
-            //         if (hit.transform.GetComponent<Interactable>())
-            //         {
-            //             return (true, hit.transform.GetComponent<Interactable>());
-
-            //         }
-            //     }
-            // }
             RaycastHit hit;
             if(Physics.Raycast(landingRay, out hit, 4.5f)){
                 if (hit.transform.GetComponent<Interactable>())

@@ -32,9 +32,9 @@ public class BotanicalWingInit : MonoBehaviour
         instance.start();
         isPlaying = true;
 
-        foreach (StudioEventEmitter emitter in emitters)
+        foreach (Occlusion occ in occlusions)
         {
-            emitter.Stop();
+            occ.Stop();
         }
 
         if (audioLogPath == "event:/Botanical Wing Scene/LOG_The Light is Out") {
@@ -114,8 +114,10 @@ public class BotanicalWingInit : MonoBehaviour
     }
     IEnumerator SubtitleSequence002() {
         yield return new WaitForSeconds(1);
-        textBox.GetComponent<TextMeshProUGUI>().text = "Okay, so before we send this station to its orbit, I'm making a simple guide for the crew.";
-        yield return new WaitForSeconds(6);
+        textBox.GetComponent<TextMeshProUGUI>().text = "Okay, so before we send this station to its orbit,";
+        yield return new WaitForSeconds(3.5f);
+        textBox.GetComponent<TextMeshProUGUI>().text = "I'm making a simple guide for the crew.";
+        yield return new WaitForSeconds(2.5f);
         textBox.GetComponent<TextMeshProUGUI>().text = "This is the biolab, now, I'm sure you're all familiar with the concept of plants,";
         yield return new WaitForSeconds(4);
         textBox.GetComponent<TextMeshProUGUI>().text = "but for those of you who come from colonies where they weren't on the curriculum,";

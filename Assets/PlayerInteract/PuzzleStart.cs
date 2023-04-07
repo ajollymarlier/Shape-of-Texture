@@ -9,10 +9,12 @@ public class PuzzleStart : Interactable
     private FMOD.Studio.EventInstance initInstance;
     // private bool isPressed;
 
-    private bool triggered;
+    public bool triggered;
     private bool isPlaying;
 
     public GameObject textBox;
+
+    public bool canPress;
 
     private void Start()
     {
@@ -20,6 +22,7 @@ public class PuzzleStart : Interactable
         initInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Medical Bay Intro Scene/Sequence Inizialized Log");
         // isPressed = false;
         triggered = false;
+        canPress = true;
     }
 
     void Update()

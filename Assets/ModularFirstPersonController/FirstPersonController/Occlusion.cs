@@ -75,6 +75,12 @@ public class Occlusion : MonoBehaviour
 
     }
 
+    public void Stop()
+    {
+        active = false;
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
     void NotOccluded()
     {
         instance.setParameterByName("Volume", WholeVolumeValue);

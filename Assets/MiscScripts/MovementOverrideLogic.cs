@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using FMODUnity;
+using TMPro;
 
 public class MovementOverrideLogic : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class MovementOverrideLogic : MonoBehaviour
     public GameObject structure;
     public float moveSpeed;
     public GameObject tvWithEmitter;
+    public GameObject warningText;
+    public Animator animator;
 
     private BotanicalWingInit[] inits;
     // Start is called before the first frame update
@@ -23,6 +26,7 @@ public class MovementOverrideLogic : MonoBehaviour
         triggered = false;
         teleported = false;
         inits = GameObject.FindObjectsOfType<BotanicalWingInit>();
+        animator = warningText.GetComponent<Animator>();
     }
 
 
@@ -76,5 +80,11 @@ public class MovementOverrideLogic : MonoBehaviour
         player.playerCanMove = false;
         player.isWalking = false;
         player.enableHeadBob = false;
+        animator.ResetTrigger("Warned");
+        animator.SetTrigger("Reset");
+        // change warning text
+        warningText.GetComponent<TextMeshProUGUI>().text = "Warning:\u0009\u0009\u0009";
+        animator.SetTrigger("Warned");
+        animator.ResetTrigger("Reset");
     }
 }

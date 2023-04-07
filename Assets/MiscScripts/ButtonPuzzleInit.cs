@@ -12,6 +12,7 @@ using FMODUnity;
 public class ButtonPuzzleInit : MonoBehaviour
 {
     public GameObject[] orderedButtons;
+    public GameObject[] otherButtons;
     private int i;
     private bool inProgress;
     private FMODUnity.StudioEventEmitter emitter;
@@ -28,6 +29,10 @@ public class ButtonPuzzleInit : MonoBehaviour
     {
         orderedButtons[0].GetComponent<FMODUnity.StudioEventEmitter>().Play();
         inProgress = true;
+        foreach (GameObject button in orderedButtons)
+            button.GetComponent<Pressable>().Enable();
+        foreach (GameObject button in otherButtons)
+            button.GetComponent<Pressable>().Enable();
     }
 
     public void handleButtonPress(GameObject pressedButton){
@@ -56,6 +61,11 @@ public class ButtonPuzzleInit : MonoBehaviour
 
                 i = 0;
                 orderedButtons[0].GetComponent<FMODUnity.StudioEventEmitter>().Play();
+
+                foreach (GameObject button in orderedButtons)
+                    button.GetComponent<Pressable>().Unpress();
+                
+                pressedButton.GetComponent<Pressable>().Unpress();
             }
             else{
                 inProgress = false;
@@ -82,6 +92,9 @@ public class ButtonPuzzleInit : MonoBehaviour
                 // Stop emitter
                 if (emitter != null)
                     emitter.EventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+                foreach (GameObject button in orderedButtons)
+                    button.GetComponent<Pressable>().Disable();
             }
         }
     }

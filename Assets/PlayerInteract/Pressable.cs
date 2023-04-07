@@ -14,11 +14,17 @@ public class Pressable : Interactable, IPointerEnterHandler
 {
     private FMOD.Studio.EventInstance instance;
     // private bool isPressed;
+    public bool medBayCanPress;
+    public bool sequenceEnded;
+    public bool pressed;
 
     private void Start()
     {
         instance = FMODUnity.RuntimeManager.CreateInstance("event:/Medical Bay Intro Scene/SFX_Button_press");
         // isPressed = false;
+        medBayCanPress = false;
+        sequenceEnded = false;
+        pressed = false;
     }
 
     public void OnPointerEnter(PointerEventData eventData){
@@ -36,19 +42,39 @@ public class Pressable : Interactable, IPointerEnterHandler
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         instance.start();
 
-        if (SceneManager.GetActiveScene().name == "Tutorial"){
-            TutorialInit tutorialInit = gameObject.transform.parent.GetComponent<TutorialInit>();
-            tutorialInit.handleObjPress(gameObject);
+        if (!pressed)
+        {
+            pressed = true;
+            if (SceneManager.GetActiveScene().name == "Tutorial"){
+                TutorialInit tutorialInit = gameObject.transform.parent.GetComponent<TutorialInit>();
+                tutorialInit.handleObjPress(gameObject);
+            }
+
+            else if (SceneManager.GetActiveScene().name == "Final Medical Bay"){
+                ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
+                buttonPuzzleInit.handleButtonPress(gameObject);
+            } 
+
+            else if (SceneManager.GetActiveScene().name == "Botanical Wing"){
+                BotanicalWingInit botanicalWingInit = gameObject.transform.GetComponent<BotanicalWingInit>();
+                botanicalWingInit.handleObjPress(gameObject);
+            } 
         }
+        
+    }
 
-        else if (SceneManager.GetActiveScene().name == "Final Medical Bay"){
-            ButtonPuzzleInit buttonPuzzleInit = gameObject.transform.parent.GetComponent<ButtonPuzzleInit>();
-            buttonPuzzleInit.handleButtonPress(gameObject);
-        } 
+    public void Enable()
+    {
+        medBayCanPress = true;
+    }
 
-        else if (SceneManager.GetActiveScene().name == "Botanical Wing"){
-            BotanicalWingInit botanicalWingInit = gameObject.transform.GetComponent<BotanicalWingInit>();
-            botanicalWingInit.handleObjPress(gameObject);
-        } 
+    public void Disable()
+    {
+        sequenceEnded = true;
+    }
+
+    public void Unpress()
+    {
+        pressed = false;
     }
 }
