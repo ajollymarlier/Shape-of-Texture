@@ -15,11 +15,14 @@ public class MovementOverrideLogic : MonoBehaviour
     public GameObject structure;
     public float moveSpeed;
     public GameObject tvWithEmitter;
+
+    private BotanicalWingInit[] inits;
     // Start is called before the first frame update
     void Start()
     {
         triggered = false;
         teleported = false;
+        inits = GameObject.FindObjectsOfType<BotanicalWingInit>();
     }
 
 
@@ -58,6 +61,9 @@ public class MovementOverrideLogic : MonoBehaviour
                 PauseMenu.GamePaused = true;
                 player.playerCanMove = true;
                 Cursor.lockState = CursorLockMode.None;
+                foreach (BotanicalWingInit init in inits)
+                    init.Stop();
+                tvWithEmitter.GetComponent<StudioEventEmitter>().Stop();
                 SceneManager.LoadScene("MainMenu_sketch");
             }
         }
