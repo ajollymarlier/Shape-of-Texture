@@ -16,12 +16,17 @@ public class ButtonPuzzleInit : MonoBehaviour
     private int i;
     private bool inProgress;
     private FMODUnity.StudioEventEmitter emitter;
+
+    public GameObject[] doorlightShaders;
+    public Shader greenShader;
+
     // Start is called before the first frame update
     void Start()
     {
         i=0;
         inProgress = false;
         emitter = gameObject.GetComponent<FMODUnity.StudioEventEmitter>();
+        greenShader = Shader.Find("Shader Graphs/GreenLightDoor");
     }
 
     // Update is called once per frame
@@ -95,6 +100,9 @@ public class ButtonPuzzleInit : MonoBehaviour
 
                 foreach (GameObject button in orderedButtons)
                     button.GetComponent<Pressable>().Disable();
+
+                foreach (GameObject doorlight in doorlightShaders)
+                    doorlight.GetComponent<Renderer>().material.shader = greenShader;
             }
         }
     }
