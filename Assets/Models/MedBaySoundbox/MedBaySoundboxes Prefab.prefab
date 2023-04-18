@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1634724144294100174}
+  - component: {fileID: 4208090096693792306}
+  - component: {fileID: 3179472434303186187}
   m_Layer: 0
   m_Name: MedBaySoundboxes Prefab
   m_TagString: Untagged
@@ -33,6 +35,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4208090096693792306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2461791669873101256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8158a226734ed404c86ab0444076945b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medBayCanPress: 0
+  sequenceEnded: 0
+  pressed: 0
+--- !u!65 &3179472434303186187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2461791669873101256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0964713, z: 0.080058284}
+  m_Center: {x: 0, y: 0.5673362, z: 0.060843434}
 --- !u!1 &3932157719594936976
 GameObject:
   m_ObjectHideFlags: 0

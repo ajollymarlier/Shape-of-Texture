@@ -49,8 +49,8 @@ public class ButtonPuzzleInit : MonoBehaviour
     public void handleButtonPress(GameObject pressedButton){
         if (inProgress){
             if (i < orderedButtons.Length - 1 && pressedButton == orderedButtons[i]){
-                pressedButton.transform.GetChild(0).GetComponent<Light>().intensity = 0;
-                pressedButton.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
+                pressedButton.transform.GetChild(2).GetComponent<Light>().intensity = 0;
+                pressedButton.transform.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
                 i += 1;
 
                 orderedButtons[i].GetComponent<FMODUnity.StudioEventEmitter>().Play();
@@ -82,8 +82,8 @@ public class ButtonPuzzleInit : MonoBehaviour
             }
             else{
                 inProgress = false;
-                pressedButton.transform.GetChild(0).GetComponent<Light>().intensity = 0;
-                pressedButton.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
+                pressedButton.transform.GetChild(2).GetComponent<Light>().intensity = 0;
+                pressedButton.transform.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
 
                 //Turn door lights back on
                 GameObject[] doorLights = GameObject.FindGameObjectsWithTag("Door Light");
