@@ -48,7 +48,7 @@ public class MainMenuUI : MonoBehaviour{
         // Brightness
         if (!PlayerPrefs.HasKey("brightness"))
         {
-            PlayerPrefs.SetFloat("brightness", 1.0f);
+            PlayerPrefs.SetFloat("brightness", 1.5f);
             Debug.Log("Set brightness");
         }
         float brightness = PlayerPrefs.GetFloat("brightness");

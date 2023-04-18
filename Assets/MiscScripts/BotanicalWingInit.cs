@@ -17,7 +17,7 @@ public class BotanicalWingInit : MonoBehaviour
     private FMOD.Studio.EventInstance instance;
     private bool isPlaying;
 
-    public Coroutine cr;
+    public IEnumerator cr;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,25 +41,29 @@ public class BotanicalWingInit : MonoBehaviour
             if (cr != null){
                 StopCoroutine(cr);
             }
-            cr = StartCoroutine(SubtitleSequence001());
+            cr = SubtitleSequence001();
+            StartCoroutine(cr);
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog") {
             if (cr != null){
                 StopCoroutine(cr);
             }
-            cr = StartCoroutine(SubtitleSequence002());
+            cr = SubtitleSequence002();
+            StartCoroutine(cr);
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog 2") {
             if (cr != null){
                 StopCoroutine(cr);
             }
-            cr = StartCoroutine(SubtitleSequence003());
+            cr = SubtitleSequence003();
+            StartCoroutine(cr);
         }
         else if (audioLogPath == "event:/Botanical Wing Scene/SFX_BotanicalIntroLog 3") {
             if (cr != null){
                 StopCoroutine(cr);
             }
-            cr = StartCoroutine(SubtitleSequence004());
+            cr = SubtitleSequence004();
+            StartCoroutine(cr);
         }
         
 
@@ -105,11 +109,12 @@ public class BotanicalWingInit : MonoBehaviour
 
     IEnumerator SubtitleSequence001() {
         // yield return new WaitForSeconds(1);
-        textBox.GetComponent<TextMeshProUGUI>().text = "The light is out of power… Find a battery…";
+        textBox.GetComponent<TextMeshProUGUI>().text = "Your flashlight is low on power… Find a battery…";
         yield return new WaitForSeconds(6);
-        textBox.GetComponent<TextMeshProUGUI>().text = "Don’t let it go out again, or else…";
+        textBox.GetComponent<TextMeshProUGUI>().text = "Don’t let it run out again, or else…";
         yield return new WaitForSeconds(5);
-        textBox.GetComponent<TextMeshProUGUI>().text = "";
+        if (textBox.GetComponent<TextMeshProUGUI>().text == "Don’t let it run out again, or else…")
+            textBox.GetComponent<TextMeshProUGUI>().text = "";
         isPlaying = false;
     }
     IEnumerator SubtitleSequence002() {
@@ -128,7 +133,8 @@ public class BotanicalWingInit : MonoBehaviour
         yield return new WaitForSeconds(3);
         textBox.GetComponent<TextMeshProUGUI>().text = "Generally the plants in the biolab should never be left unattended for more than four hours.";
         yield return new WaitForSeconds(6);
-        textBox.GetComponent<TextMeshProUGUI>().text = "";
+        if (textBox.GetComponent<TextMeshProUGUI>().text == "Generally the plants in the biolab should never be left unattended for more than four hours.")
+            textBox.GetComponent<TextMeshProUGUI>().text = "";
         isPlaying = false;
     }
 
@@ -144,7 +150,8 @@ public class BotanicalWingInit : MonoBehaviour
         yield return new WaitForSeconds(5);
         textBox.GetComponent<TextMeshProUGUI>().text = "which should be in the closets in the back.";
         yield return new WaitForSeconds(2);
-        textBox.GetComponent<TextMeshProUGUI>().text = "";
+        if (textBox.GetComponent<TextMeshProUGUI>().text == "which should be in the closets in the back.")
+            textBox.GetComponent<TextMeshProUGUI>().text = "";
         isPlaying = false;
     }
 
@@ -160,7 +167,8 @@ public class BotanicalWingInit : MonoBehaviour
         yield return new WaitForSeconds(4);
         textBox.GetComponent<TextMeshProUGUI>().text = "take care aboard the station.";
         yield return new WaitForSeconds(2);
-        textBox.GetComponent<TextMeshProUGUI>().text = "";
+        if (textBox.GetComponent<TextMeshProUGUI>().text == "take care aboard the station.")
+            textBox.GetComponent<TextMeshProUGUI>().text = "";
         isPlaying = false;
     }
 }

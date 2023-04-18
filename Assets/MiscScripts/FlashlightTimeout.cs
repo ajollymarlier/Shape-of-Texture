@@ -15,9 +15,10 @@ public class FlashlightTimeout : MonoBehaviour
     public bool losingBattery;
     private Light flashlight;
     public GameObject warningText;
+    public GameObject subtitleText;
     public string deathAudioLogPath;
     private FMOD.Studio.EventInstance instance;
-    private bool isGameOver;
+    public static bool isGameOver;
 
     public Animator animator;
 
@@ -58,12 +59,6 @@ public class FlashlightTimeout : MonoBehaviour
                 lowBattery = true;
                 text1 = true;
             }
-            // else if (timerValSecs < lowBatteryTime){
-            //     lowBattery = true;
-            // }
-            // else if (!lowBattery){
-            //     lowBattery = true;
-            // }
 
             // Low battery sequence
             if (lowBattery)
@@ -115,11 +110,18 @@ public class FlashlightTimeout : MonoBehaviour
         instance = FMODUnity.RuntimeManager.CreateInstance(deathAudioLogPath);
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         instance.start();
+        BotanicalWingInit[] inits = GameObject.FindObjectsOfType<BotanicalWingInit>();
+        foreach (BotanicalWingInit init in inits)
+            init.Stop();
+        subtitleText.GetComponent<TextMeshProUGUI>().text = "...";
         StartCoroutine(flashlightBlackoutSequence());
     }
 
     private IEnumerator flashlightBlackoutSequence(){
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+        animator.SetTrigger("Faded");
+        animator.ResetTrigger("Warned");
+        yield return new WaitForSeconds(2);
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         restartLevel();
     }
@@ -127,6 +129,10 @@ public class FlashlightTimeout : MonoBehaviour
     private void restartLevel(){
         Time.timeScale = 1f;
         GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
+        FMODUnity.StudioEventEmitter[] emitters = GameObject.FindObjectsOfType<FMODUnity.StudioEventEmitter>();
+        foreach (FMODUnity.StudioEventEmitter em in emitters)
+            em.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
+            
         int index = SceneManager.GetActiveScene().buildIndex;
         if (index == 1)
         {
@@ -157,8 +163,9 @@ public class FlashlightTimeout : MonoBehaviour
         lowBattery = false;
         text1 = false;
         text2 = false;
-        warningText.GetComponent<TextMeshProUGUI>().text = "";
+        animator.SetTrigger("Faded");
         animator.ResetTrigger("Warned");
-        animator.SetTrigger("Reset");
+        // yield return new WaitForSeconds(1);
+        // warningText.GetComponent<TextMeshProUGUI>().text = "";
     }
 }

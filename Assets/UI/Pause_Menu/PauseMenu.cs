@@ -63,7 +63,7 @@ public class PauseMenu : MonoBehaviour
         // Brightness
         if (!PlayerPrefs.HasKey("brightness"))
         {
-            PlayerPrefs.SetFloat("brightness", 1.0f);
+            PlayerPrefs.SetFloat("brightness", 1.5f);
             Debug.Log("Set brightness");
         }
         float brightness = PlayerPrefs.GetFloat("brightness");
@@ -148,6 +148,9 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         Debug.Log("Loading menu");
+        FMODUnity.StudioEventEmitter[] emitters = GameObject.FindObjectsOfType<FMODUnity.StudioEventEmitter>();
+        foreach (FMODUnity.StudioEventEmitter em in emitters)
+            em.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
         SceneManager.LoadScene(0);
     }
 
@@ -162,6 +165,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GamePaused = false;
         GameObject.Find("FirstPersonController").GetComponent<Footsteps_Audio>().stopsound();
+        FMODUnity.StudioEventEmitter[] emitters = GameObject.FindObjectsOfType<FMODUnity.StudioEventEmitter>();
+        foreach (FMODUnity.StudioEventEmitter em in emitters)
+            em.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
         int index = SceneManager.GetActiveScene().buildIndex;
         if (index == 1)
         {

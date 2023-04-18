@@ -67,7 +67,9 @@ public class MovementOverrideLogic : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 foreach (BotanicalWingInit init in inits)
                     init.Stop();
-                tvWithEmitter.GetComponent<StudioEventEmitter>().Stop();
+                FMODUnity.StudioEventEmitter[] emitters = GameObject.FindObjectsOfType<FMODUnity.StudioEventEmitter>();
+                foreach (FMODUnity.StudioEventEmitter em in emitters)
+                    em.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
                 SceneManager.LoadScene("MainMenu_sketch");
             }
         }

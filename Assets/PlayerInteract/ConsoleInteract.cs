@@ -12,12 +12,17 @@ public class ConsoleInteract : Interactable
     private FMOD.Studio.EventInstance instance;
     private Coroutine cr;
 
+    public GameObject[] doorlightShaders;
+    public Shader greenShader;
+
     // Start is called before the first frame update
     void Start()
     {
         // StartCoroutine(SubtitleSequence());
         logPlaying = false;
         instance = FMODUnity.RuntimeManager.CreateInstance("event:/Control Center Scene/Botanical Wing Opened LOG");
+
+        greenShader = Shader.Find("Shader Graphs/GreenLightDoor");
     }
 
     void Update() {
@@ -46,6 +51,9 @@ public class ConsoleInteract : Interactable
             instance.start();
             cr = StartCoroutine(SubtitleSequence());
 
+            foreach (GameObject doorlight in doorlightShaders)
+                    doorlight.GetComponent<Renderer>().material.shader = greenShader;
+
             // Set all others interacted
             ConsoleInteract[] consoles = GameObject.FindObjectsOfType<ConsoleInteract>();
             foreach (var console in consoles)
@@ -58,7 +66,7 @@ public class ConsoleInteract : Interactable
 
     IEnumerator SubtitleSequence() {
         textBox.GetComponent<TextMeshProUGUI>().text = "Botanical wing opened";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2.9f);
         if (textBox.GetComponent<TextMeshProUGUI>().text == "Botanical wing opened")
         {
             textBox.GetComponent<TextMeshProUGUI>().text = "";

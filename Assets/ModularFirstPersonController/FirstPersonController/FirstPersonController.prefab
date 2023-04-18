@@ -78,7 +78,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190780
-  m_fontColor: {r: 0.735849, g: 0.00897377, b: 0, a: 1}
+  m_fontColor: {r: 0.735849, g: 0.00897377, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -899,7 +899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc48e847ef33d94ba403a476e3a8d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canInteract: 0
+  inMedBay: 0
+  initCanInteract: 0
 --- !u!1 &4459864851397454630
 GameObject:
   m_ObjectHideFlags: 0

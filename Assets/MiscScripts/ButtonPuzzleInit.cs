@@ -20,6 +20,8 @@ public class ButtonPuzzleInit : MonoBehaviour
     public GameObject[] doorlightShaders;
     public Shader greenShader;
 
+    public MistakeManager mistakeManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,10 @@ public class ButtonPuzzleInit : MonoBehaviour
         inProgress = false;
         emitter = gameObject.GetComponent<FMODUnity.StudioEventEmitter>();
         greenShader = Shader.Find("Shader Graphs/GreenLightDoor");
+        if (mistakeManager == null)
+        {
+            mistakeManager = GameObject.Find("MistakeManager").GetComponent<MistakeManager>();
+        }
     }
 
     // Update is called once per frame
@@ -71,6 +77,8 @@ public class ButtonPuzzleInit : MonoBehaviour
                     button.GetComponent<Pressable>().Unpress();
                 
                 pressedButton.GetComponent<Pressable>().Unpress();
+
+                mistakeManager.MakeMistake();
             }
             else{
                 inProgress = false;

@@ -2547,6 +2547,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2243d64e7fe331c44b7c13c583043695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mistakes: 0
+  isGameOver: 0
+  warningText: {fileID: 1384917233}
+  animator: {fileID: 0}
+  deathAudioLogPath: event:/Botanical Wing Scene/GameOver
 --- !u!4 &259654131
 Transform:
   m_ObjectHideFlags: 0
@@ -16204,6 +16209,7 @@ MonoBehaviour:
   - {fileID: 1548942479}
   - {fileID: 944218744}
   greenShader: {fileID: 0}
+  mistakeManager: {fileID: 0}
 --- !u!114 &1043730807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17028,6 +17034,7 @@ MonoBehaviour:
   - {fileID: 140931695}
   - {fileID: 1986424308}
   greenShader: {fileID: 0}
+  mistakeManager: {fileID: 0}
 --- !u!65 &1094302722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22376,6 +22383,7 @@ MonoBehaviour:
   - {fileID: 1500390399}
   - {fileID: 1053254607}
   greenShader: {fileID: 0}
+  mistakeManager: {fileID: 0}
 --- !u!114 &1368559210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22406,6 +22414,11 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!1 &1384917233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1134252507061442303, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 1298088336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1395091467
 PrefabInstance:
   m_ObjectHideFlags: 0
