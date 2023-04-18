@@ -52,6 +52,21 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     interactText.text = "";
                 }
+                else if (item.GetType() == typeof(ConsoleInteract))
+                {
+                    if (!((ConsoleInteract)item).interacted)
+                    {
+                        interactText.text = "[E]/[Left Click] - Interact";
+                        if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+                        {
+                            CheckInteraction(item);
+                        }
+                    }
+                    else
+                    {
+                        interactText.text = "Botanical Wing door has opened.";
+                    }
+                }
                 else if (!inMedBay)
                 {
                     interactText.text = "[E]/[Left Click] - Interact";
