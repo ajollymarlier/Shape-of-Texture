@@ -70,6 +70,9 @@ public class MovementOverrideLogic : MonoBehaviour
                 FMODUnity.StudioEventEmitter[] emitters = GameObject.FindObjectsOfType<FMODUnity.StudioEventEmitter>();
                 foreach (FMODUnity.StudioEventEmitter em in emitters)
                     em.GetComponent<FMODUnity.StudioEventEmitter>().Stop();
+                animator.ResetTrigger("Warned");
+                animator.ResetTrigger("Faded");
+                animator.SetTrigger("Reset");
                 SceneManager.LoadScene("MainMenu_sketch");
             }
         }
@@ -83,6 +86,7 @@ public class MovementOverrideLogic : MonoBehaviour
         player.isWalking = false;
         player.enableHeadBob = false;
         animator.ResetTrigger("Warned");
+        animator.ResetTrigger("Faded");
         animator.SetTrigger("Reset");
         // change warning text
         warningText.GetComponent<TextMeshProUGUI>().text = "Warning:\u0009\u0009\u0009";

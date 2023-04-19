@@ -77,7 +77,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190780
+    rgba: 700
   m_fontColor: {r: 0.735849, g: 0.00897377, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -553,7 +553,7 @@ MonoBehaviour:
   fov: 60
   invertCamera: 0
   cameraCanMove: 1
-  mouseSensitivity: 2
+  mouseSensitivity: 1.5
   maxLookAngle: 50
   lockCursor: 1
   crosshair: 1
