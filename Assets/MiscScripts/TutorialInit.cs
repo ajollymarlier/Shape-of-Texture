@@ -17,9 +17,13 @@ public class TutorialInit : MonoBehaviour
     private bool logPlaying;
     private Coroutine cr;
 
+    public GameObject[] doorlightShaders;
+    public Shader greenShader;
+
     private void Start(){
         instance = FMODUnity.RuntimeManager.CreateInstance(audioLogPath);
         logPlaying = false;
+        greenShader = Shader.Find("Shader Graphs/GreenLightDoor");
     }
 
     public void handleObjPress(GameObject pressedObj){
@@ -35,7 +39,10 @@ public class TutorialInit : MonoBehaviour
             instance.start();
             logPlaying = true;
             cr = StartCoroutine(SubtitleSequence());
-        }   
+        }
+
+        foreach (GameObject doorlight in doorlightShaders)
+            doorlight.GetComponent<Renderer>().material.shader = greenShader;
     }
 
     void Update()

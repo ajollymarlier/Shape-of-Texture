@@ -67,7 +67,7 @@ public class ButtonPuzzleInit : MonoBehaviour
 
                 // Turn lights back on
                 for (int j=0; j < i; j++){
-                    orderedButtons[j].transform.GetChild(0).GetComponent<Light>().intensity = 100;
+                    orderedButtons[j].transform.GetChild(2).GetComponent<Light>().intensity = 100;
                 }
 
                 i = 0;
