@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.031442195, g: 0.009468702, b: 0.013107872, a: 1}
+  m_IndirectSpecularColor: {r: 0.031483587, g: 0.009458372, b: 0.013140744, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8829253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 596, y: -880, z: 18.36}
+  m_LocalPosition: {x: 331, y: -1400, z: 18.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -168,7 +168,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2000, y: 1, z: 3000}
+  m_Size: {x: 3000, y: 1, z: 3000}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8829256
 MonoBehaviour:
@@ -4434,6 +4434,7 @@ GameObject:
   - component: {fileID: 1444927076}
   - component: {fileID: 1444927075}
   - component: {fileID: 1444927078}
+  - component: {fileID: 1444927079}
   m_Layer: 0
   m_Name: Box Volume ( Fall Distortion)
   m_TagString: Untagged
@@ -4479,8 +4480,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444927074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 157, y: -27, z: 477.3}
-  m_LocalScale: {x: 24.903, y: 37.6525, z: 27.012142}
+  m_LocalPosition: {x: 174, y: -270, z: 477.3}
+  m_LocalScale: {x: 212.55786, y: 523.6249, z: 221.05008}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1142628115}
@@ -4507,6 +4508,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1444927079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444927074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19dffdf98aab4f244a5085226ded6fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  gv: {fileID: 0}
+  volume: {fileID: 0}
+  setToCur: 0
+  triggered: 0
+  part2: 0
 --- !u!1001 &1469661235
 PrefabInstance:
   m_ObjectHideFlags: 0
