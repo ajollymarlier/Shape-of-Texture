@@ -50,6 +50,12 @@ public class MistakeManager : MonoBehaviour
             StopCoroutine(cr);
             cr = WarnPlayer3();
             StartCoroutine(cr);
+        }
+        else if (mistakes == 4)
+        {
+            StopCoroutine(cr);
+            cr = WarnPlayer4();
+            StartCoroutine(cr);
             GameOver();
         }
     }
@@ -125,6 +131,19 @@ public class MistakeManager : MonoBehaviour
     }
 
     IEnumerator WarnPlayer3() {
+        isGameOver = true;
+        // change warning text
+        warningText.GetComponent<TextMeshProUGUI>().text = "Warning: FOLLOW ... THE ... MUSIC ...";
+        animator.SetTrigger("Warned");
+        animator.ResetTrigger("Reset");
+        yield return new WaitForSeconds(3);
+        animator.SetTrigger("Faded");
+        animator.ResetTrigger("Warned");
+        yield return new WaitForSeconds(1);
+        warningText.GetComponent<TextMeshProUGUI>().text = "";
+    }
+
+    IEnumerator WarnPlayer4() {
         isGameOver = true;
         // change warning text
         warningText.GetComponent<TextMeshProUGUI>().text = "Warning: ... the ... music ...";
